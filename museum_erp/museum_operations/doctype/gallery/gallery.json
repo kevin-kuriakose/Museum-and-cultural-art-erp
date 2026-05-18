@@ -1,0 +1,110 @@
+{
+  "actions": [],
+  "autoname": "field:gallery_name",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "gallery_name",
+    "floor",
+    "area_sqm",
+    "capacity",
+    "lighting_type",
+    "col1",
+    "temp_min",
+    "temp_max",
+    "humidity_min",
+    "humidity_max",
+    "security_level",
+    "current_exhibition",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "gallery_name",
+      "fieldtype": "Data",
+      "label": "Gallery Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "floor",
+      "fieldtype": "Data",
+      "label": "Floor"
+    },
+    {
+      "fieldname": "area_sqm",
+      "fieldtype": "Float",
+      "label": "Area (sqm)"
+    },
+    {
+      "fieldname": "capacity",
+      "fieldtype": "Int",
+      "label": "Capacity"
+    },
+    {
+      "fieldname": "lighting_type",
+      "fieldtype": "Data",
+      "label": "Lighting Type"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "temp_min",
+      "fieldtype": "Float",
+      "label": "Temp Min (\u00b0C)"
+    },
+    {
+      "fieldname": "temp_max",
+      "fieldtype": "Float",
+      "label": "Temp Max (\u00b0C)"
+    },
+    {
+      "fieldname": "humidity_min",
+      "fieldtype": "Float",
+      "label": "Humidity Min (%)"
+    },
+    {
+      "fieldname": "humidity_max",
+      "fieldtype": "Float",
+      "label": "Humidity Max (%)"
+    },
+    {
+      "fieldname": "security_level",
+      "fieldtype": "Select",
+      "label": "Security Level",
+      "options": "High\nMedium\nStandard"
+    },
+    {
+      "fieldname": "current_exhibition",
+      "fieldtype": "Link",
+      "label": "Current Exhibition",
+      "options": "Exhibition"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Open to Public\nClosed for Installation\nClosed for Maintenance\nReserved for Event\nResearch Access Only",
+      "default": "Open to Public",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Gallery",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "title_field": "gallery_name",
+  "track_changes": 1
+}

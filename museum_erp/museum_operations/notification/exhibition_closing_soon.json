@@ -1,0 +1,16 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Exhibition",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>The exhibition <strong>{{ doc.title }}</strong> closes on\n<strong>{{ doc.end_date }}</strong>.</p>\n<p>Please begin planning for artifact relocation and post-exhibition documentation.</p>",
+  "name": "Exhibition Closing Soon",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Exhibition Closing in 3 Days: {{ doc.title }}",
+  "days_in_advance": 3,
+  "date_changed": "end_date"
+}

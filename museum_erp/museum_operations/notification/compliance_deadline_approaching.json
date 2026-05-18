@@ -1,0 +1,16 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Compliance Tracker",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>The compliance obligation <strong>{{ doc.obligation_type }}</strong>\nis due on <strong>{{ doc.due_date }}</strong>.</p>\n<p>Responsible: <strong>{{ doc.responsible_person }}</strong>. Please take action.</p>",
+  "name": "Compliance Deadline Approaching",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Compliance Due in 30 Days: {{ doc.obligation_type }}",
+  "days_in_advance": 30,
+  "date_changed": "due_date"
+}

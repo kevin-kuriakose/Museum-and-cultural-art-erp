@@ -1,0 +1,16 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Grant",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>The grant <strong>{{ doc.grant_title }}</strong> from <strong>{{ doc.granting_body }}</strong>\nends on <strong>{{ doc.end_date }}</strong>.</p>\n<p>Ensure final utilization reports and expenditures are completed before the deadline.</p>",
+  "name": "Grant Ending Soon",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Grant Ending in 60 Days: {{ doc.grant_title }}",
+  "days_in_advance": 60,
+  "date_changed": "end_date"
+}

@@ -1,0 +1,47 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "item",
+    "qty",
+    "rate",
+    "amount"
+  ],
+  "fields": [
+    {
+      "fieldname": "item",
+      "fieldtype": "Link",
+      "label": "Item",
+      "options": "Shop Item",
+      "in_list_view": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "qty",
+      "fieldtype": "Int",
+      "label": "Qty",
+      "in_list_view": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "rate",
+      "fieldtype": "Currency",
+      "label": "Rate",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "label": "Amount",
+      "in_list_view": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Shop PO Item",
+  "owner": "Administrator",
+  "permissions": []
+}

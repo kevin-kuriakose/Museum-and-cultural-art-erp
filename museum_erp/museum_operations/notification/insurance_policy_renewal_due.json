@@ -1,0 +1,16 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Insurance Policy",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>The insurance policy <strong>{{ doc.policy_number }}</strong> ({{ doc.coverage_type }})\nwith <strong>{{ doc.insurer }}</strong> expires on <strong>{{ doc.end_date }}</strong>.</p>\n<p>Please initiate renewal at least 30 days before expiry.</p>",
+  "name": "Insurance Policy Renewal Due",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Insurance Policy Expiring: {{ doc.policy_number }}",
+  "days_in_advance": 60,
+  "date_changed": "end_date"
+}

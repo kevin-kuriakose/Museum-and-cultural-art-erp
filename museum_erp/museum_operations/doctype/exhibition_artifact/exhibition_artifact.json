@@ -1,0 +1,110 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "exhibition",
+    "artifact",
+    "display_position",
+    "col1",
+    "mount_type",
+    "lighting_requirement",
+    "insurance_value_for_exhibition",
+    "loan_required",
+    "label_section",
+    "label_text",
+    "interactive_element"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EXHA-.YYYY.-.#####",
+      "default": "EXHA-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "exhibition",
+      "fieldtype": "Link",
+      "label": "Exhibition",
+      "options": "Exhibition",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "artifact",
+      "fieldtype": "Link",
+      "label": "Artifact",
+      "options": "Artifact",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "display_position",
+      "fieldtype": "Data",
+      "label": "Display Position"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "mount_type",
+      "fieldtype": "Data",
+      "label": "Mount Type"
+    },
+    {
+      "fieldname": "lighting_requirement",
+      "fieldtype": "Data",
+      "label": "Lighting Requirement"
+    },
+    {
+      "fieldname": "insurance_value_for_exhibition",
+      "fieldtype": "Currency",
+      "label": "Insurance Value (Rs)"
+    },
+    {
+      "fieldname": "loan_required",
+      "fieldtype": "Check",
+      "label": "Loan Required"
+    },
+    {
+      "fieldname": "label_section",
+      "fieldtype": "Section Break",
+      "label": "Label"
+    },
+    {
+      "fieldname": "label_text",
+      "fieldtype": "Text",
+      "label": "Label Text"
+    },
+    {
+      "fieldname": "interactive_element",
+      "fieldtype": "Data",
+      "label": "Interactive Element"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Exhibition Artifact",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "track_changes": 1
+}

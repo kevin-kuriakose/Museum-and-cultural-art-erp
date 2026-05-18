@@ -1,0 +1,97 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "program",
+    "session_date",
+    "session_time",
+    "venue",
+    "registered_count",
+    "attended_count",
+    "col1",
+    "facilitator",
+    "notes",
+    "feedback_score"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "PSESS-.YYYY.-.#####",
+      "default": "PSESS-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "program",
+      "fieldtype": "Link",
+      "label": "Program",
+      "options": "Education Program",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "session_date",
+      "fieldtype": "Date",
+      "label": "Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "session_time",
+      "fieldtype": "Time",
+      "label": "Time"
+    },
+    {
+      "fieldname": "venue",
+      "fieldtype": "Data",
+      "label": "Venue"
+    },
+    {
+      "fieldname": "registered_count",
+      "fieldtype": "Int",
+      "label": "Registered"
+    },
+    {
+      "fieldname": "attended_count",
+      "fieldtype": "Int",
+      "label": "Attended"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "facilitator",
+      "fieldtype": "Data",
+      "label": "Facilitator"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    },
+    {
+      "fieldname": "feedback_score",
+      "fieldtype": "Float",
+      "label": "Feedback Score"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Program Session",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "track_changes": 1
+}

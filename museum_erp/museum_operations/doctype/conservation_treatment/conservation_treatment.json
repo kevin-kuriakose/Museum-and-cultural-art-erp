@@ -1,0 +1,126 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "conservation_record",
+    "treatment_type",
+    "conservator_name",
+    "start_date",
+    "end_date",
+    "col1",
+    "hours_spent",
+    "cost",
+    "before_condition",
+    "after_condition",
+    "details_section",
+    "materials_used",
+    "photographic_documentation"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "CTRT-.YYYY.-.#####",
+      "default": "CTRT-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "conservation_record",
+      "fieldtype": "Link",
+      "label": "Conservation Record",
+      "options": "Conservation Record",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "treatment_type",
+      "fieldtype": "Select",
+      "label": "Treatment Type",
+      "options": "Cleaning\nConsolidation\nRepair\nStabilization\nRestoration",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "conservator_name",
+      "fieldtype": "Data",
+      "label": "Conservator",
+      "reqd": 1
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "hours_spent",
+      "fieldtype": "Float",
+      "label": "Hours Spent"
+    },
+    {
+      "fieldname": "cost",
+      "fieldtype": "Currency",
+      "label": "Cost (Rs)"
+    },
+    {
+      "fieldname": "before_condition",
+      "fieldtype": "Select",
+      "label": "Before Condition",
+      "options": "\nExcellent\nGood\nFair\nPoor\nCritical"
+    },
+    {
+      "fieldname": "after_condition",
+      "fieldtype": "Select",
+      "label": "After Condition",
+      "options": "\nExcellent\nGood\nFair\nPoor\nCritical"
+    },
+    {
+      "fieldname": "details_section",
+      "fieldtype": "Section Break",
+      "label": "Details"
+    },
+    {
+      "fieldname": "materials_used",
+      "fieldtype": "Small Text",
+      "label": "Materials Used"
+    },
+    {
+      "fieldname": "photographic_documentation",
+      "fieldtype": "Check",
+      "label": "Photographic Documentation"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Conservation Treatment",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "track_changes": 1
+}

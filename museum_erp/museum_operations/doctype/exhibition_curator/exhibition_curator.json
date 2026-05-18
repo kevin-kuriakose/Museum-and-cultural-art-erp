@@ -1,0 +1,31 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "curator_name",
+    "role"
+  ],
+  "fields": [
+    {
+      "fieldname": "curator_name",
+      "fieldtype": "Link",
+      "label": "Curator",
+      "options": "User",
+      "in_list_view": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "role",
+      "fieldtype": "Data",
+      "label": "Role",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Exhibition Curator",
+  "owner": "Administrator",
+  "permissions": []
+}

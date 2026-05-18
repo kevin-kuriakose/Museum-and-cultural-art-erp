@@ -1,0 +1,83 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "obligation_type",
+    "due_date",
+    "responsible_person",
+    "col1",
+    "completed_date",
+    "notes",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "COMP-.YYYY.-.#####",
+      "default": "COMP-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "obligation_type",
+      "fieldtype": "Select",
+      "label": "Obligation Type",
+      "options": "Fire Safety Certificate\nPest Control Certificate\nBuilding Insurance Renewal\nCollections Insurance Renewal\nIncome Tax Return\nFCRA Annual Return\nStatutory Audit\nCollections Audit\nBoard AGM\nData Protection Review",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "due_date",
+      "fieldtype": "Date",
+      "label": "Due Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "responsible_person",
+      "fieldtype": "Link",
+      "label": "Responsible Person",
+      "options": "User"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "completed_date",
+      "fieldtype": "Date",
+      "label": "Completed Date"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Pending\nCompleted\nOverdue",
+      "default": "Pending",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Compliance Tracker",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "track_changes": 1
+}

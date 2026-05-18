@@ -1,0 +1,147 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "grant_title",
+    "granting_body",
+    "grant_type",
+    "amount",
+    "currency",
+    "application_date",
+    "approval_date",
+    "col1",
+    "start_date",
+    "end_date",
+    "reporting_frequency",
+    "purpose",
+    "conditions",
+    "status",
+    "budget_lines"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "GRNT-.YYYY.-.#####",
+      "default": "GRNT-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "grant_title",
+      "fieldtype": "Data",
+      "label": "Grant Title",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "granting_body",
+      "fieldtype": "Data",
+      "label": "Granting Body",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "grant_type",
+      "fieldtype": "Select",
+      "label": "Type",
+      "options": "Government Scheme\nMinistry of Culture\nState Arts Council\nInternational Foundation\nCorporate CSR\nLottery Fund\nPrivate Foundation\nUNESCO\nIndividual Major Donor"
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "label": "Amount (Rs)",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "currency",
+      "fieldtype": "Link",
+      "label": "Currency",
+      "options": "Currency",
+      "default": "INR"
+    },
+    {
+      "fieldname": "application_date",
+      "fieldtype": "Date",
+      "label": "Application Date"
+    },
+    {
+      "fieldname": "approval_date",
+      "fieldtype": "Date",
+      "label": "Approval Date"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "reporting_frequency",
+      "fieldtype": "Select",
+      "label": "Reporting Frequency",
+      "options": "Monthly\nQuarterly\nBi-Annual\nAnnual"
+    },
+    {
+      "fieldname": "purpose",
+      "fieldtype": "Select",
+      "label": "Purpose",
+      "options": "Collection\nConservation\nExhibition\nEducation\nInfrastructure\nResearch"
+    },
+    {
+      "fieldname": "conditions",
+      "fieldtype": "Small Text",
+      "label": "Conditions"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Applied\nApproved\nActive\nClosed\nRejected",
+      "default": "Applied",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "budget_lines",
+      "fieldtype": "Table",
+      "label": "Budget Lines",
+      "options": "Grant Budget Line"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Grant",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "title_field": "grant_title",
+  "track_changes": 1
+}

@@ -1,0 +1,107 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "exhibition",
+    "tour_name",
+    "tour_type",
+    "duration_minutes",
+    "max_group_size",
+    "col1",
+    "languages_available",
+    "tour_guide",
+    "schedule",
+    "fee_per_person"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "TOUR-.YYYY.-.#####",
+      "default": "TOUR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "exhibition",
+      "fieldtype": "Link",
+      "label": "Exhibition",
+      "options": "Exhibition",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "tour_name",
+      "fieldtype": "Data",
+      "label": "Tour Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "tour_type",
+      "fieldtype": "Select",
+      "label": "Tour Type",
+      "options": "Guided\nSelf-Guided\nAudio\nSchool Group\nVIP",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "duration_minutes",
+      "fieldtype": "Int",
+      "label": "Duration (mins)"
+    },
+    {
+      "fieldname": "max_group_size",
+      "fieldtype": "Int",
+      "label": "Max Group Size"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "languages_available",
+      "fieldtype": "Data",
+      "label": "Languages"
+    },
+    {
+      "fieldname": "tour_guide",
+      "fieldtype": "Data",
+      "label": "Tour Guide"
+    },
+    {
+      "fieldname": "schedule",
+      "fieldtype": "Small Text",
+      "label": "Schedule"
+    },
+    {
+      "fieldname": "fee_per_person",
+      "fieldtype": "Currency",
+      "label": "Fee per Person (Rs)"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Exhibition Tour",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "title_field": "tour_name",
+  "track_changes": 1
+}

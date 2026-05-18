@@ -1,0 +1,15 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Donation",
+  "enabled": 1,
+  "event": "Submit",
+  "message": "<p>A donation of <strong>Rs {{ doc.amount }}</strong> from <strong>{{ doc.donor }}</strong>\non {{ doc.donation_date }} has been received.</p>\n<p>The 80G receipt has NOT been issued yet. Please issue and send to the donor.</p>",
+  "name": "Donation 80G Receipt Pending",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "80G Receipt Pending: {{ doc.name }}",
+  "condition": "doc.is_80g_receipt_issued == 0"
+}

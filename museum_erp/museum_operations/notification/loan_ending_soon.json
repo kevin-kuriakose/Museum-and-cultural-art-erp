@@ -1,0 +1,16 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Loan",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>The loan <strong>{{ doc.name }}</strong> to <strong>{{ doc.borrower_lender_institution }}</strong>\nis due to end on <strong>{{ doc.loan_end_date }}</strong>.</p>\n<p>Please begin arrangements for the return of artifacts.</p>",
+  "name": "Loan Ending Soon",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Loan Ending in 14 Days: {{ doc.name }}",
+  "days_in_advance": 14,
+  "date_changed": "loan_end_date"
+}

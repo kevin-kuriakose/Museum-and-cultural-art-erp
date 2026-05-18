@@ -1,0 +1,51 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "artifact",
+    "object_type",
+    "condition",
+    "estimated_value",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "artifact",
+      "fieldtype": "Link",
+      "label": "Artifact",
+      "options": "Artifact",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "object_type",
+      "fieldtype": "Data",
+      "label": "Object Type",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "condition",
+      "fieldtype": "Select",
+      "label": "Condition",
+      "options": "Excellent\nGood\nFair\nPoor\nCritical",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "estimated_value",
+      "fieldtype": "Currency",
+      "label": "Estimated Value",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Acquisition Item",
+  "owner": "Administrator",
+  "permissions": []
+}

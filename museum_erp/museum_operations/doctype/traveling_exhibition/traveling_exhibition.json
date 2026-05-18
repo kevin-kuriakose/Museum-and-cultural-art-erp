@@ -1,0 +1,106 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "exhibition",
+    "host_institution",
+    "host_contact",
+    "travel_start_date",
+    "travel_end_date",
+    "col1",
+    "shipping_method",
+    "insurance_during_travel",
+    "conditions_agreement",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "TEXP-.YYYY.-.#####",
+      "default": "TEXP-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "exhibition",
+      "fieldtype": "Link",
+      "label": "Exhibition",
+      "options": "Exhibition",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "host_institution",
+      "fieldtype": "Data",
+      "label": "Host Institution",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "host_contact",
+      "fieldtype": "Data",
+      "label": "Host Contact"
+    },
+    {
+      "fieldname": "travel_start_date",
+      "fieldtype": "Date",
+      "label": "Travel Start",
+      "reqd": 1
+    },
+    {
+      "fieldname": "travel_end_date",
+      "fieldtype": "Date",
+      "label": "Travel End",
+      "reqd": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "shipping_method",
+      "fieldtype": "Data",
+      "label": "Shipping Method"
+    },
+    {
+      "fieldname": "insurance_during_travel",
+      "fieldtype": "Currency",
+      "label": "Insurance (Rs)"
+    },
+    {
+      "fieldname": "conditions_agreement",
+      "fieldtype": "Attach",
+      "label": "Conditions Agreement"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Planned\nIn Transit\nInstalled\nReturned",
+      "default": "Planned",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Traveling Exhibition",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1
+    }
+  ],
+  "track_changes": 1
+}

@@ -1,0 +1,30 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "member_name",
+    "attended"
+  ],
+  "fields": [
+    {
+      "fieldname": "member_name",
+      "fieldtype": "Data",
+      "label": "Member",
+      "in_list_view": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "attended",
+      "fieldtype": "Check",
+      "label": "Attended",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Board Attendee",
+  "owner": "Administrator",
+  "permissions": []
+}

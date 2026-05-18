@@ -1,0 +1,155 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 1,
+  "field_order": [
+    "naming_series",
+    "sale_date",
+    "cashier",
+    "payment_mode",
+    "col1",
+    "subtotal",
+    "discount",
+    "tax",
+    "total",
+    "member_discount_applied",
+    "receipt_number",
+    "status",
+    "items_section",
+    "items",
+    "erpnext_section",
+    "sales_invoice",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "SALE-.YYYY.-.#####",
+      "default": "SALE-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "sale_date",
+      "fieldtype": "Date",
+      "label": "Sale Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "cashier",
+      "fieldtype": "Link",
+      "label": "Cashier",
+      "options": "User"
+    },
+    {
+      "fieldname": "payment_mode",
+      "fieldtype": "Select",
+      "label": "Payment Mode",
+      "options": "Cash\nUPI\nCard\nOnline"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "subtotal",
+      "fieldtype": "Currency",
+      "label": "Subtotal (Rs)",
+      "read_only": 1
+    },
+    {
+      "fieldname": "discount",
+      "fieldtype": "Currency",
+      "label": "Discount (Rs)"
+    },
+    {
+      "fieldname": "tax",
+      "fieldtype": "Currency",
+      "label": "Tax (Rs)"
+    },
+    {
+      "fieldname": "total",
+      "fieldtype": "Currency",
+      "label": "Total (Rs)",
+      "read_only": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "member_discount_applied",
+      "fieldtype": "Check",
+      "label": "Member Discount Applied"
+    },
+    {
+      "fieldname": "receipt_number",
+      "fieldtype": "Data",
+      "label": "Receipt Number"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Draft\nCompleted\nCancelled",
+      "default": "Draft",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "items_section",
+      "fieldtype": "Section Break",
+      "label": "Items"
+    },
+    {
+      "fieldname": "items",
+      "fieldtype": "Table",
+      "label": "Items",
+      "options": "Shop Sale Item"
+    },
+    {
+      "fieldname": "erpnext_section",
+      "fieldtype": "Section Break",
+      "label": "ERPNext"
+    },
+    {
+      "fieldname": "sales_invoice",
+      "fieldtype": "Link",
+      "label": "Sales Invoice",
+      "options": "Sales Invoice"
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Shop Sale",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Shop Sale",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "submit": 1
+    }
+  ],
+  "track_changes": 1
+}

@@ -1,0 +1,111 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "location",
+    "issue_type",
+    "priority",
+    "reported_by",
+    "reported_date",
+    "col1",
+    "assigned_to",
+    "scheduled_date",
+    "completed_date",
+    "cost",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "MREQ-.YYYY.-.#####",
+      "default": "MREQ-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "location",
+      "fieldtype": "Data",
+      "label": "Location",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "issue_type",
+      "fieldtype": "Select",
+      "label": "Issue Type",
+      "options": "Electrical\nPlumbing\nHVAC\nSecurity\nStructural\nPest",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "priority",
+      "fieldtype": "Select",
+      "label": "Priority",
+      "options": "Critical\nHigh\nMedium\nLow",
+      "default": "Medium",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "reported_by",
+      "fieldtype": "Data",
+      "label": "Reported By"
+    },
+    {
+      "fieldname": "reported_date",
+      "fieldtype": "Date",
+      "label": "Reported Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "assigned_to",
+      "fieldtype": "Link",
+      "label": "Assigned To",
+      "options": "User"
+    },
+    {
+      "fieldname": "scheduled_date",
+      "fieldtype": "Date",
+      "label": "Scheduled Date"
+    },
+    {
+      "fieldname": "completed_date",
+      "fieldtype": "Date",
+      "label": "Completed Date"
+    },
+    {
+      "fieldname": "cost",
+      "fieldtype": "Currency",
+      "label": "Cost (Rs)"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Reported\nAssigned\nIn Progress\nCompleted",
+      "default": "Reported",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Maintenance Request",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "track_changes": 1
+}

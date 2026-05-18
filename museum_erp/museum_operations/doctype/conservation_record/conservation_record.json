@@ -1,0 +1,169 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "artifact",
+    "examination_date",
+    "examiner_name",
+    "condition_rating",
+    "priority",
+    "col1",
+    "status",
+    "treatment_required",
+    "next_examination_date",
+    "details_section",
+    "condition_details",
+    "treatment_description",
+    "materials_used",
+    "dates_section",
+    "treatment_start_date",
+    "treatment_end_date",
+    "outcome",
+    "erpnext_section",
+    "project"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "CONS-.YYYY.-.#####",
+      "default": "CONS-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "artifact",
+      "fieldtype": "Link",
+      "label": "Artifact",
+      "options": "Artifact",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "examination_date",
+      "fieldtype": "Date",
+      "label": "Examination Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "examiner_name",
+      "fieldtype": "Data",
+      "label": "Examiner Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "condition_rating",
+      "fieldtype": "Select",
+      "label": "Condition Rating",
+      "options": "Excellent\nGood\nFair\nPoor\nCritical",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "priority",
+      "fieldtype": "Select",
+      "label": "Priority",
+      "options": "Urgent\nHigh\nMedium\nLow",
+      "default": "Medium",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Examination\nTreatment\nCompleted",
+      "default": "Examination",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "treatment_required",
+      "fieldtype": "Check",
+      "label": "Treatment Required"
+    },
+    {
+      "fieldname": "next_examination_date",
+      "fieldtype": "Date",
+      "label": "Next Examination Date"
+    },
+    {
+      "fieldname": "details_section",
+      "fieldtype": "Section Break",
+      "label": "Details"
+    },
+    {
+      "fieldname": "condition_details",
+      "fieldtype": "Text Editor",
+      "label": "Condition Details"
+    },
+    {
+      "fieldname": "treatment_description",
+      "fieldtype": "Text Editor",
+      "label": "Treatment Description"
+    },
+    {
+      "fieldname": "materials_used",
+      "fieldtype": "Small Text",
+      "label": "Materials Used"
+    },
+    {
+      "fieldname": "dates_section",
+      "fieldtype": "Section Break",
+      "label": "Treatment Dates"
+    },
+    {
+      "fieldname": "treatment_start_date",
+      "fieldtype": "Date",
+      "label": "Treatment Start"
+    },
+    {
+      "fieldname": "treatment_end_date",
+      "fieldtype": "Date",
+      "label": "Treatment End"
+    },
+    {
+      "fieldname": "outcome",
+      "fieldtype": "Small Text",
+      "label": "Outcome"
+    },
+    {
+      "fieldname": "erpnext_section",
+      "fieldtype": "Section Break",
+      "label": "ERPNext"
+    },
+    {
+      "fieldname": "project",
+      "fieldtype": "Link",
+      "label": "ERPNext Project",
+      "options": "Project"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Conservation Record",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "title_field": "artifact",
+  "track_changes": 1
+}

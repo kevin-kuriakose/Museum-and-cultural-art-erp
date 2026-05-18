@@ -1,0 +1,87 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "policy_name",
+    "category",
+    "version",
+    "effective_date",
+    "review_date",
+    "col1",
+    "approved_by",
+    "document_attachment"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "POL-.YYYY.-.#####",
+      "default": "POL-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "policy_name",
+      "fieldtype": "Data",
+      "label": "Policy Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "category",
+      "fieldtype": "Select",
+      "label": "Category",
+      "options": "Collections\nConservation\nLoans\nAccess\nData Protection\nHealth and Safety\nFinancial",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "version",
+      "fieldtype": "Data",
+      "label": "Version"
+    },
+    {
+      "fieldname": "effective_date",
+      "fieldtype": "Date",
+      "label": "Effective Date",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "review_date",
+      "fieldtype": "Date",
+      "label": "Review Date"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "approved_by",
+      "fieldtype": "Data",
+      "label": "Approved By"
+    },
+    {
+      "fieldname": "document_attachment",
+      "fieldtype": "Attach",
+      "label": "Document"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Policy Document",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "title_field": "policy_name",
+  "track_changes": 1
+}

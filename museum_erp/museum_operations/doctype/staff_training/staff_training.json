@@ -1,0 +1,107 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "staff_name",
+    "training_type",
+    "training_date",
+    "trainer",
+    "duration_hours",
+    "col1",
+    "pass_or_fail",
+    "certificate_issued",
+    "next_renewal_date",
+    "erpnext_section",
+    "employee"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "STRN-.YYYY.-.#####",
+      "default": "STRN-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "staff_name",
+      "fieldtype": "Data",
+      "label": "Staff Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "training_type",
+      "fieldtype": "Select",
+      "label": "Training Type",
+      "options": "Collections Handling\nEmergency Procedures\nCustomer Service\nConservation\nDigital Systems\nDiversity",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "training_date",
+      "fieldtype": "Date",
+      "label": "Training Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "trainer",
+      "fieldtype": "Data",
+      "label": "Trainer"
+    },
+    {
+      "fieldname": "duration_hours",
+      "fieldtype": "Float",
+      "label": "Duration (hrs)"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "pass_or_fail",
+      "fieldtype": "Select",
+      "label": "Result",
+      "options": "Pass\nFail\nPending"
+    },
+    {
+      "fieldname": "certificate_issued",
+      "fieldtype": "Check",
+      "label": "Certificate Issued"
+    },
+    {
+      "fieldname": "next_renewal_date",
+      "fieldtype": "Date",
+      "label": "Next Renewal"
+    },
+    {
+      "fieldname": "erpnext_section",
+      "fieldtype": "Section Break",
+      "label": "ERPNext"
+    },
+    {
+      "fieldname": "employee",
+      "fieldtype": "Link",
+      "label": "Employee",
+      "options": "Employee"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Staff Training",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "track_changes": 1
+}

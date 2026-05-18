@@ -1,0 +1,107 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "researcher_name",
+    "institution",
+    "research_topic",
+    "access_type",
+    "start_date",
+    "end_date",
+    "col1",
+    "purpose",
+    "approval_status",
+    "approved_by",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "RREQ-.YYYY.-.#####",
+      "default": "RREQ-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "researcher_name",
+      "fieldtype": "Data",
+      "label": "Researcher",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "institution",
+      "fieldtype": "Data",
+      "label": "Institution",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "research_topic",
+      "fieldtype": "Data",
+      "label": "Research Topic",
+      "reqd": 1
+    },
+    {
+      "fieldname": "access_type",
+      "fieldtype": "Select",
+      "label": "Access Type",
+      "options": "Physical\nDigital"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date"
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "purpose",
+      "fieldtype": "Small Text",
+      "label": "Purpose"
+    },
+    {
+      "fieldname": "approval_status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Pending\nApproved\nRejected\nCompleted",
+      "default": "Pending",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "approved_by",
+      "fieldtype": "Link",
+      "label": "Approved By",
+      "options": "User"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Research Request",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "track_changes": 1
+}

@@ -1,0 +1,108 @@
+{
+  "actions": [],
+  "autoname": "field:room_name",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "room_name",
+    "floor",
+    "area_sqm",
+    "capacity",
+    "col1",
+    "climate_controlled",
+    "temp_min",
+    "temp_max",
+    "humidity_min",
+    "humidity_max",
+    "artifact_types_stored",
+    "access_restricted",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "room_name",
+      "fieldtype": "Data",
+      "label": "Room Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "floor",
+      "fieldtype": "Data",
+      "label": "Floor"
+    },
+    {
+      "fieldname": "area_sqm",
+      "fieldtype": "Float",
+      "label": "Area (sqm)"
+    },
+    {
+      "fieldname": "capacity",
+      "fieldtype": "Int",
+      "label": "Capacity"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "climate_controlled",
+      "fieldtype": "Check",
+      "label": "Climate Controlled"
+    },
+    {
+      "fieldname": "temp_min",
+      "fieldtype": "Float",
+      "label": "Temp Min (\u00b0C)"
+    },
+    {
+      "fieldname": "temp_max",
+      "fieldtype": "Float",
+      "label": "Temp Max (\u00b0C)"
+    },
+    {
+      "fieldname": "humidity_min",
+      "fieldtype": "Float",
+      "label": "Humidity Min (%)"
+    },
+    {
+      "fieldname": "humidity_max",
+      "fieldtype": "Float",
+      "label": "Humidity Max (%)"
+    },
+    {
+      "fieldname": "artifact_types_stored",
+      "fieldtype": "Data",
+      "label": "Artifact Types"
+    },
+    {
+      "fieldname": "access_restricted",
+      "fieldtype": "Check",
+      "label": "Access Restricted"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nClosed\nUnder Maintenance",
+      "default": "Active",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Storage Room",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "title_field": "room_name",
+  "track_changes": 1
+}

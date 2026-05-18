@@ -1,0 +1,16 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Member",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>The membership of <strong>{{ doc.member_name }}</strong> ({{ doc.membership_tier }})\nis due to expire on <strong>{{ doc.expiry_date }}</strong>.</p>\n<p>Please send a renewal reminder.</p>",
+  "name": "Member Expiring Soon",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Membership Expiring: {{ doc.member_name }}",
+  "days_in_advance": 30,
+  "date_changed": "expiry_date"
+}

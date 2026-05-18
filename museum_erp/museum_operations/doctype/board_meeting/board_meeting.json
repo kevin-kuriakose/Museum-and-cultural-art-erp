@@ -1,0 +1,99 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "meeting_date",
+    "meeting_type",
+    "resolutions_passed",
+    "next_meeting_date",
+    "col1",
+    "minutes_document",
+    "agenda_section",
+    "agenda",
+    "attendance_section",
+    "attendance"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "BM-.YYYY.-.#####",
+      "default": "BM-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "meeting_date",
+      "fieldtype": "Date",
+      "label": "Meeting Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "meeting_type",
+      "fieldtype": "Select",
+      "label": "Meeting Type",
+      "options": "Regular\nSpecial\nAGM",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "resolutions_passed",
+      "fieldtype": "Text",
+      "label": "Resolutions Passed"
+    },
+    {
+      "fieldname": "next_meeting_date",
+      "fieldtype": "Date",
+      "label": "Next Meeting Date"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "minutes_document",
+      "fieldtype": "Attach",
+      "label": "Minutes Document"
+    },
+    {
+      "fieldname": "agenda_section",
+      "fieldtype": "Section Break",
+      "label": "Agenda"
+    },
+    {
+      "fieldname": "agenda",
+      "fieldtype": "Table",
+      "label": "Agenda",
+      "options": "Board Agenda"
+    },
+    {
+      "fieldname": "attendance_section",
+      "fieldtype": "Section Break",
+      "label": "Attendance"
+    },
+    {
+      "fieldname": "attendance",
+      "fieldtype": "Table",
+      "label": "Attendance",
+      "options": "Board Attendee"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Board Meeting",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "track_changes": 1
+}

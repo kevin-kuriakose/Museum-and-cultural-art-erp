@@ -1,0 +1,31 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "language",
+    "translated_text"
+  ],
+  "fields": [
+    {
+      "fieldname": "language",
+      "fieldtype": "Link",
+      "label": "Language",
+      "options": "Language",
+      "in_list_view": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "translated_text",
+      "fieldtype": "Text",
+      "label": "Translated Text",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Exhibition Label Language",
+  "owner": "Administrator",
+  "permissions": []
+}

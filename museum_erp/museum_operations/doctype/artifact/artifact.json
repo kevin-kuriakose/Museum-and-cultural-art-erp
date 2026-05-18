@@ -1,0 +1,257 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "accession_number",
+    "title",
+    "object_type",
+    "classification",
+    "status",
+    "col1",
+    "medium_material",
+    "creation_date",
+    "creator_artist",
+    "dimensions_section",
+    "height_cm",
+    "width_cm",
+    "depth_cm",
+    "weight_kg",
+    "acquisition_section",
+    "acquisition_date",
+    "acquisition_method",
+    "acquisition_source",
+    "insurance_value",
+    "location_section",
+    "current_location",
+    "legal_status",
+    "copyright_status",
+    "condition_section",
+    "condition",
+    "condition_notes",
+    "erpnext_section",
+    "linked_item",
+    "cost_center",
+    "description_section",
+    "description",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "ART-.YYYY.-.#####",
+      "default": "ART-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "accession_number",
+      "fieldtype": "Data",
+      "label": "Accession Number",
+      "reqd": 1,
+      "in_list_view": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "title",
+      "fieldtype": "Data",
+      "label": "Title",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "object_type",
+      "fieldtype": "Select",
+      "label": "Object Type",
+      "options": "\nPainting\nSculpture\nDrawing\nPrint\nPhotograph\nTextile\nCeramic\nMetalwork\nFurniture\nManuscript\nBook\nCoin\nMedal\nFossil\nSpecimen\nArchaeological Artifact\nEthnographic Object\nScientific Instrument\nArms and Armour\nJewellery\nCostume\nFilm\nDigital Object\nArchitectural Fragment",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "classification",
+      "fieldtype": "Select",
+      "label": "Classification",
+      "options": "\nFine Art\nDecorative Art\nArchaeology\nNatural History\nScience and Technology\nEthnology\nSocial History\nMilitary History\nMaritime\nNumismatics\nPhotography\nManuscripts and Archives",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nOn Loan\nIn Conservation\nDeaccessioned\nMissing",
+      "default": "Active",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "medium_material",
+      "fieldtype": "Data",
+      "label": "Medium / Material"
+    },
+    {
+      "fieldname": "creation_date",
+      "fieldtype": "Data",
+      "label": "Creation Date (approx)"
+    },
+    {
+      "fieldname": "creator_artist",
+      "fieldtype": "Data",
+      "label": "Creator / Artist"
+    },
+    {
+      "fieldname": "dimensions_section",
+      "fieldtype": "Section Break",
+      "label": "Dimensions"
+    },
+    {
+      "fieldname": "height_cm",
+      "fieldtype": "Float",
+      "label": "Height (cm)"
+    },
+    {
+      "fieldname": "width_cm",
+      "fieldtype": "Float",
+      "label": "Width (cm)"
+    },
+    {
+      "fieldname": "depth_cm",
+      "fieldtype": "Float",
+      "label": "Depth (cm)"
+    },
+    {
+      "fieldname": "weight_kg",
+      "fieldtype": "Float",
+      "label": "Weight (kg)"
+    },
+    {
+      "fieldname": "acquisition_section",
+      "fieldtype": "Section Break",
+      "label": "Acquisition"
+    },
+    {
+      "fieldname": "acquisition_date",
+      "fieldtype": "Date",
+      "label": "Acquisition Date"
+    },
+    {
+      "fieldname": "acquisition_method",
+      "fieldtype": "Select",
+      "label": "Acquisition Method",
+      "options": "\nPurchase\nGift\nBequest\nField Collection\nTransfer\nBequest in Will\nLong Term Deposit\nRepatriation\nCommission"
+    },
+    {
+      "fieldname": "acquisition_source",
+      "fieldtype": "Data",
+      "label": "Acquisition Source"
+    },
+    {
+      "fieldname": "insurance_value",
+      "fieldtype": "Currency",
+      "label": "Insurance Value (Rs)"
+    },
+    {
+      "fieldname": "location_section",
+      "fieldtype": "Section Break",
+      "label": "Location & Legal"
+    },
+    {
+      "fieldname": "current_location",
+      "fieldtype": "Data",
+      "label": "Current Location"
+    },
+    {
+      "fieldname": "legal_status",
+      "fieldtype": "Select",
+      "label": "Legal Status",
+      "options": "Owned\nBorrowed\nDeposited",
+      "default": "Owned"
+    },
+    {
+      "fieldname": "copyright_status",
+      "fieldtype": "Select",
+      "label": "Copyright Status",
+      "options": "Museum Owned\nPublic Domain\nThird Party\nUnknown"
+    },
+    {
+      "fieldname": "condition_section",
+      "fieldtype": "Section Break",
+      "label": "Condition"
+    },
+    {
+      "fieldname": "condition",
+      "fieldtype": "Select",
+      "label": "Condition",
+      "options": "Excellent\nGood\nFair\nPoor\nCritical",
+      "default": "Good",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "condition_notes",
+      "fieldtype": "Small Text",
+      "label": "Condition Notes"
+    },
+    {
+      "fieldname": "erpnext_section",
+      "fieldtype": "Section Break",
+      "label": "ERPNext Integration"
+    },
+    {
+      "fieldname": "linked_item",
+      "fieldtype": "Link",
+      "label": "Linked ERPNext Item",
+      "options": "Item"
+    },
+    {
+      "fieldname": "cost_center",
+      "fieldtype": "Link",
+      "label": "Cost Center",
+      "options": "Cost Center"
+    },
+    {
+      "fieldname": "description_section",
+      "fieldtype": "Section Break",
+      "label": "Description"
+    },
+    {
+      "fieldname": "description",
+      "fieldtype": "Text Editor",
+      "label": "Description"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Artifact",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1
+    }
+  ],
+  "title_field": "title",
+  "track_changes": 1
+}

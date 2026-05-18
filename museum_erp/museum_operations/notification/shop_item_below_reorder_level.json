@@ -1,0 +1,15 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Shop Item",
+  "enabled": 1,
+  "event": "Save",
+  "message": "<p>Shop item <strong>{{ doc.item_name }}</strong> (SKU: {{ doc.sku }})\nhas stock quantity <strong>{{ doc.stock_quantity }}</strong> which is at or below the\nreorder level of <strong>{{ doc.reorder_level }}</strong>.</p>\n<p>Please raise a Shop Purchase Order to replenish stock.</p>",
+  "name": "Shop Item Below Reorder Level",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Low Stock Alert: {{ doc.item_name }}",
+  "condition": "doc.stock_quantity <= doc.reorder_level"
+}

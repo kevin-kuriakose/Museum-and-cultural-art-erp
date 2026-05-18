@@ -1,0 +1,110 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "event_name",
+    "event_type",
+    "event_date",
+    "venue",
+    "target_amount",
+    "col1",
+    "actual_amount_raised",
+    "ticket_price",
+    "attendee_count",
+    "status",
+    "sponsors"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "FEV-.YYYY.-.#####",
+      "default": "FEV-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "event_name",
+      "fieldtype": "Data",
+      "label": "Event Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "event_type",
+      "fieldtype": "Select",
+      "label": "Type",
+      "options": "Gala Dinner\nAuction\nWalk\nConcert\nOnline Campaign",
+      "reqd": 1
+    },
+    {
+      "fieldname": "event_date",
+      "fieldtype": "Date",
+      "label": "Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "venue",
+      "fieldtype": "Data",
+      "label": "Venue"
+    },
+    {
+      "fieldname": "target_amount",
+      "fieldtype": "Currency",
+      "label": "Target (Rs)",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "actual_amount_raised",
+      "fieldtype": "Currency",
+      "label": "Raised (Rs)"
+    },
+    {
+      "fieldname": "ticket_price",
+      "fieldtype": "Currency",
+      "label": "Ticket Price (Rs)"
+    },
+    {
+      "fieldname": "attendee_count",
+      "fieldtype": "Int",
+      "label": "Attendees"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Planning\nConfirmed\nCompleted\nCancelled",
+      "default": "Planning",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "sponsors",
+      "fieldtype": "Table",
+      "label": "Sponsors",
+      "options": "Fundraising Sponsor"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Fundraising Event",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "title_field": "event_name",
+  "track_changes": 1
+}

@@ -1,0 +1,14 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Venue Hire",
+  "enabled": 1,
+  "event": "Submit",
+  "message": "<p>The venue hire for <strong>{{ doc.event_name }}</strong> by\n<strong>{{ doc.hirer_name }}</strong> on <strong>{{ doc.event_date }}</strong>\nat {{ doc.venue_name }} has been confirmed.</p>\n<p>Hire fee: Rs {{ doc.hire_fee }}. Please ensure deposit is collected.</p>",
+  "name": "Venue Hire Confirmed",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Venue Hire Confirmed: {{ doc.event_name }}"
+}

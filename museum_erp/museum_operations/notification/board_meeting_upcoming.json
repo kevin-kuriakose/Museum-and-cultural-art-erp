@@ -1,0 +1,16 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Board Meeting",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>A <strong>{{ doc.meeting_type }}</strong> Board Meeting is scheduled for\n<strong>{{ doc.meeting_date }}</strong>.</p>\n<p>Please review the agenda and confirm attendance.</p>",
+  "name": "Board Meeting Upcoming",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Board Meeting in 5 Days: {{ doc.meeting_type }}",
+  "days_in_advance": 5,
+  "date_changed": "meeting_date"
+}

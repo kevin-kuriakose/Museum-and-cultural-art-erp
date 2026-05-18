@@ -1,0 +1,85 @@
+{
+  "actions": [],
+  "autoname": "field:ticket_type_name",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "ticket_type_name",
+    "category",
+    "price",
+    "valid_for",
+    "col1",
+    "includes_audio_guide",
+    "includes_catalogue",
+    "max_per_booking"
+  ],
+  "fields": [
+    {
+      "fieldname": "ticket_type_name",
+      "fieldtype": "Data",
+      "label": "Ticket Type Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "category",
+      "fieldtype": "Select",
+      "label": "Category",
+      "options": "General Adult\nConcession\nChild (under 12)\nSenior (60 plus)\nMember\nFamily (2 adults 2 children)\nGroup (10 plus)\nSchool Group\nFree Entry\nPress and Media",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "price",
+      "fieldtype": "Currency",
+      "label": "Price (Rs)",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "valid_for",
+      "fieldtype": "Select",
+      "label": "Valid For",
+      "options": "General Admission\nSpecific Exhibition\nCombo"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "includes_audio_guide",
+      "fieldtype": "Check",
+      "label": "Includes Audio Guide"
+    },
+    {
+      "fieldname": "includes_catalogue",
+      "fieldtype": "Check",
+      "label": "Includes Catalogue"
+    },
+    {
+      "fieldname": "max_per_booking",
+      "fieldtype": "Int",
+      "label": "Max Per Booking"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Ticket Type",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1
+    }
+  ],
+  "title_field": "ticket_type_name",
+  "track_changes": 1
+}

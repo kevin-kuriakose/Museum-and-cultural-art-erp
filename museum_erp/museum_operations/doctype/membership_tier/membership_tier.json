@@ -1,0 +1,100 @@
+{
+  "actions": [],
+  "autoname": "field:tier_name",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "tier_name",
+    "annual_fee",
+    "guest_passes_per_year",
+    "col1",
+    "discount_on_tickets",
+    "discount_on_shop",
+    "discount_on_events",
+    "priority_booking",
+    "catalogue_included",
+    "newsletter_included",
+    "benefits"
+  ],
+  "fields": [
+    {
+      "fieldname": "tier_name",
+      "fieldtype": "Data",
+      "label": "Tier Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "annual_fee",
+      "fieldtype": "Currency",
+      "label": "Annual Fee (Rs)",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "guest_passes_per_year",
+      "fieldtype": "Int",
+      "label": "Guest Passes"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "discount_on_tickets",
+      "fieldtype": "Float",
+      "label": "Ticket Discount (%)"
+    },
+    {
+      "fieldname": "discount_on_shop",
+      "fieldtype": "Float",
+      "label": "Shop Discount (%)"
+    },
+    {
+      "fieldname": "discount_on_events",
+      "fieldtype": "Float",
+      "label": "Events Discount (%)"
+    },
+    {
+      "fieldname": "priority_booking",
+      "fieldtype": "Check",
+      "label": "Priority Booking"
+    },
+    {
+      "fieldname": "catalogue_included",
+      "fieldtype": "Check",
+      "label": "Catalogue Included"
+    },
+    {
+      "fieldname": "newsletter_included",
+      "fieldtype": "Check",
+      "label": "Newsletter Included"
+    },
+    {
+      "fieldname": "benefits",
+      "fieldtype": "Table",
+      "label": "Benefits",
+      "options": "Membership Tier Benefit"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Membership Tier",
+  "naming_rule": "By fieldname",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1
+    }
+  ],
+  "title_field": "tier_name",
+  "track_changes": 1
+}

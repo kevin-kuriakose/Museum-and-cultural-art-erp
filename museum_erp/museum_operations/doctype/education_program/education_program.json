@@ -1,0 +1,108 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "program_name",
+    "program_type",
+    "target_age_group",
+    "duration_minutes",
+    "capacity",
+    "fee",
+    "col1",
+    "facilitator",
+    "linked_exhibition",
+    "materials_required",
+    "status"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EPROG-.YYYY.-.#####",
+      "default": "EPROG-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "program_name",
+      "fieldtype": "Data",
+      "label": "Program Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "program_type",
+      "fieldtype": "Select",
+      "label": "Type",
+      "options": "School Workshop\nPublic Lecture\nCurator Talk\nFamily Activity\nFilm Screening\nArt Class\nHeritage Walk\nStorytelling Session\nBehind the Scenes Tour\nConservation Demo",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "target_age_group",
+      "fieldtype": "Data",
+      "label": "Target Age Group"
+    },
+    {
+      "fieldname": "duration_minutes",
+      "fieldtype": "Int",
+      "label": "Duration (mins)"
+    },
+    {
+      "fieldname": "capacity",
+      "fieldtype": "Int",
+      "label": "Capacity"
+    },
+    {
+      "fieldname": "fee",
+      "fieldtype": "Currency",
+      "label": "Fee (Rs)"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "facilitator",
+      "fieldtype": "Data",
+      "label": "Facilitator"
+    },
+    {
+      "fieldname": "linked_exhibition",
+      "fieldtype": "Link",
+      "label": "Linked Exhibition",
+      "options": "Exhibition"
+    },
+    {
+      "fieldname": "materials_required",
+      "fieldtype": "Small Text",
+      "label": "Materials Required"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nInactive\nDraft",
+      "default": "Draft",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Education Program",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "title_field": "program_name",
+  "track_changes": 1
+}

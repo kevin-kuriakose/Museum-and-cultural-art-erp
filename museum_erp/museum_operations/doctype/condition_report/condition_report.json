@@ -1,0 +1,102 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "artifact",
+    "report_date",
+    "reported_by",
+    "condition_at_time",
+    "event_type",
+    "col1",
+    "observations",
+    "damage_noted",
+    "recommendations"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "CRPT-.YYYY.-.#####",
+      "default": "CRPT-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "artifact",
+      "fieldtype": "Link",
+      "label": "Artifact",
+      "options": "Artifact",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "report_date",
+      "fieldtype": "Date",
+      "label": "Report Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "reported_by",
+      "fieldtype": "Data",
+      "label": "Reported By",
+      "reqd": 1
+    },
+    {
+      "fieldname": "condition_at_time",
+      "fieldtype": "Select",
+      "label": "Condition",
+      "options": "Excellent\nGood\nFair\nPoor\nCritical",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "event_type",
+      "fieldtype": "Select",
+      "label": "Event Type",
+      "options": "Incoming Loan\nOutgoing Loan\nExhibition\nTransport\nRoutine Check"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "observations",
+      "fieldtype": "Text Editor",
+      "label": "Observations"
+    },
+    {
+      "fieldname": "damage_noted",
+      "fieldtype": "Check",
+      "label": "Damage Noted"
+    },
+    {
+      "fieldname": "recommendations",
+      "fieldtype": "Small Text",
+      "label": "Recommendations"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Condition Report",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "track_changes": 1
+}

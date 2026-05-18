@@ -1,0 +1,16 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Member",
+  "enabled": 1,
+  "event": "Days After",
+  "message": "<p>The membership of <strong>{{ doc.member_name }}</strong> expired on\n<strong>{{ doc.expiry_date }}</strong>.</p>\n<p>Please follow up for renewal or lapse the membership.</p>",
+  "name": "Member Expired",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Membership Expired: {{ doc.member_name }}",
+  "days_in_advance": 0,
+  "date_changed": "expiry_date"
+}

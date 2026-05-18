@@ -1,0 +1,36 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "agenda_item",
+    "presenter",
+    "duration_minutes"
+  ],
+  "fields": [
+    {
+      "fieldname": "agenda_item",
+      "fieldtype": "Data",
+      "label": "Agenda Item",
+      "in_list_view": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "presenter",
+      "fieldtype": "Data",
+      "label": "Presenter",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "duration_minutes",
+      "fieldtype": "Int",
+      "label": "Duration (mins)"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Board Agenda",
+  "owner": "Administrator",
+  "permissions": []
+}

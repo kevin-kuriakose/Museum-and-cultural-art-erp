@@ -1,0 +1,103 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "artifact",
+    "previous_owner",
+    "ownership_period_start",
+    "ownership_period_end",
+    "col1",
+    "source_country",
+    "acquisition_method",
+    "legal_documentation_reference",
+    "repatriation_flag",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "APROV-.YYYY.-.#####",
+      "default": "APROV-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "artifact",
+      "fieldtype": "Link",
+      "label": "Artifact",
+      "options": "Artifact",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "previous_owner",
+      "fieldtype": "Data",
+      "label": "Previous Owner",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "ownership_period_start",
+      "fieldtype": "Date",
+      "label": "Ownership From"
+    },
+    {
+      "fieldname": "ownership_period_end",
+      "fieldtype": "Date",
+      "label": "Ownership To"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "source_country",
+      "fieldtype": "Link",
+      "label": "Source Country",
+      "options": "Country"
+    },
+    {
+      "fieldname": "acquisition_method",
+      "fieldtype": "Select",
+      "label": "Acquisition Method",
+      "options": "\nPurchase\nGift\nBequest\nField Collection\nTransfer\nRepatriation\nCommission"
+    },
+    {
+      "fieldname": "legal_documentation_reference",
+      "fieldtype": "Data",
+      "label": "Legal Doc Reference"
+    },
+    {
+      "fieldname": "repatriation_flag",
+      "fieldtype": "Check",
+      "label": "Repatriation Required"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Artifact Provenance",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1
+    }
+  ],
+  "track_changes": 1
+}

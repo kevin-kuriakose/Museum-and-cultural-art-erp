@@ -1,0 +1,37 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "assignment",
+    "date",
+    "hours"
+  ],
+  "fields": [
+    {
+      "fieldname": "assignment",
+      "fieldtype": "Link",
+      "label": "Assignment",
+      "options": "Volunteer Assignment",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "date",
+      "fieldtype": "Date",
+      "label": "Date",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "hours",
+      "fieldtype": "Float",
+      "label": "Hours",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Volunteer Timesheet Entry",
+  "owner": "Administrator",
+  "permissions": []
+}

@@ -1,0 +1,173 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 1,
+  "field_order": [
+    "naming_series",
+    "loan_type",
+    "borrower_lender_institution",
+    "contact_person",
+    "purpose",
+    "loan_start_date",
+    "loan_end_date",
+    "col1",
+    "courier_required",
+    "facility_report_required",
+    "insurance_value",
+    "insurance_policy_number",
+    "status",
+    "artifacts_section",
+    "artifacts",
+    "conditions_section",
+    "packing_instructions",
+    "conditions_of_loan",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "LOAN-.YYYY.-.#####",
+      "default": "LOAN-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "loan_type",
+      "fieldtype": "Select",
+      "label": "Loan Type",
+      "options": "Outgoing\nIncoming",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "borrower_lender_institution",
+      "fieldtype": "Data",
+      "label": "Borrower / Lender",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "contact_person",
+      "fieldtype": "Data",
+      "label": "Contact Person"
+    },
+    {
+      "fieldname": "purpose",
+      "fieldtype": "Select",
+      "label": "Purpose",
+      "options": "Temporary Exhibition\nPermanent Display\nConservation Treatment\nPhotography\nResearch\nRepatriation Review\nLegal Proceeding"
+    },
+    {
+      "fieldname": "loan_start_date",
+      "fieldtype": "Date",
+      "label": "Start Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "loan_end_date",
+      "fieldtype": "Date",
+      "label": "End Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "courier_required",
+      "fieldtype": "Check",
+      "label": "Courier Required"
+    },
+    {
+      "fieldname": "facility_report_required",
+      "fieldtype": "Check",
+      "label": "Facility Report Required"
+    },
+    {
+      "fieldname": "insurance_value",
+      "fieldtype": "Currency",
+      "label": "Insurance Value (Rs)"
+    },
+    {
+      "fieldname": "insurance_policy_number",
+      "fieldtype": "Data",
+      "label": "Insurance Policy No"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Requested\nApproved\nActive\nReturned\nOverdue",
+      "default": "Requested",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "artifacts_section",
+      "fieldtype": "Section Break",
+      "label": "Artifacts"
+    },
+    {
+      "fieldname": "artifacts",
+      "fieldtype": "Table",
+      "label": "Artifacts",
+      "options": "Loan Artifact"
+    },
+    {
+      "fieldname": "conditions_section",
+      "fieldtype": "Section Break",
+      "label": "Conditions"
+    },
+    {
+      "fieldname": "packing_instructions",
+      "fieldtype": "Small Text",
+      "label": "Packing Instructions"
+    },
+    {
+      "fieldname": "conditions_of_loan",
+      "fieldtype": "Text Editor",
+      "label": "Conditions of Loan"
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Loan",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Loan",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "submit": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1
+    }
+  ],
+  "title_field": "borrower_lender_institution",
+  "track_changes": 1
+}

@@ -1,0 +1,112 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "volunteer_name",
+    "contact",
+    "languages_spoken",
+    "availability",
+    "col1",
+    "role_preferences",
+    "induction_date",
+    "background_check_status",
+    "total_hours_served",
+    "status",
+    "skills_section",
+    "skills"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "VOL-.YYYY.-.#####",
+      "default": "VOL-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "volunteer_name",
+      "fieldtype": "Data",
+      "label": "Volunteer Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "contact",
+      "fieldtype": "Data",
+      "label": "Contact"
+    },
+    {
+      "fieldname": "languages_spoken",
+      "fieldtype": "Data",
+      "label": "Languages Spoken"
+    },
+    {
+      "fieldname": "availability",
+      "fieldtype": "Data",
+      "label": "Availability"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "role_preferences",
+      "fieldtype": "Data",
+      "label": "Role Preferences"
+    },
+    {
+      "fieldname": "induction_date",
+      "fieldtype": "Date",
+      "label": "Induction Date"
+    },
+    {
+      "fieldname": "background_check_status",
+      "fieldtype": "Select",
+      "label": "Background Check",
+      "options": "Pending\nCleared\nFailed\nExpired"
+    },
+    {
+      "fieldname": "total_hours_served",
+      "fieldtype": "Float",
+      "label": "Total Hours"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nInactive\nOn Leave",
+      "default": "Active",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "skills_section",
+      "fieldtype": "Section Break",
+      "label": "Skills"
+    },
+    {
+      "fieldname": "skills",
+      "fieldtype": "Table",
+      "label": "Skills",
+      "options": "Volunteer Skill"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Volunteer",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ],
+  "title_field": "volunteer_name",
+  "track_changes": 1
+}

@@ -1,0 +1,136 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "loan",
+    "institution_inspected",
+    "inspection_date",
+    "inspector_name",
+    "col1",
+    "temperature_min",
+    "temperature_max",
+    "humidity_min",
+    "humidity_max",
+    "lighting_lux_level",
+    "security_rating",
+    "pest_control_status",
+    "result_section",
+    "passed",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "FACR-.YYYY.-.#####",
+      "default": "FACR-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "loan",
+      "fieldtype": "Link",
+      "label": "Loan",
+      "options": "Loan",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "institution_inspected",
+      "fieldtype": "Data",
+      "label": "Institution Inspected",
+      "reqd": 1
+    },
+    {
+      "fieldname": "inspection_date",
+      "fieldtype": "Date",
+      "label": "Inspection Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "inspector_name",
+      "fieldtype": "Data",
+      "label": "Inspector Name"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "temperature_min",
+      "fieldtype": "Float",
+      "label": "Temp Min (\u00b0C)"
+    },
+    {
+      "fieldname": "temperature_max",
+      "fieldtype": "Float",
+      "label": "Temp Max (\u00b0C)"
+    },
+    {
+      "fieldname": "humidity_min",
+      "fieldtype": "Float",
+      "label": "Humidity Min (%)"
+    },
+    {
+      "fieldname": "humidity_max",
+      "fieldtype": "Float",
+      "label": "Humidity Max (%)"
+    },
+    {
+      "fieldname": "lighting_lux_level",
+      "fieldtype": "Float",
+      "label": "Lighting (lux)"
+    },
+    {
+      "fieldname": "security_rating",
+      "fieldtype": "Select",
+      "label": "Security Rating",
+      "options": "Excellent\nGood\nAdequate\nInsufficient"
+    },
+    {
+      "fieldname": "pest_control_status",
+      "fieldtype": "Select",
+      "label": "Pest Control",
+      "options": "Active\nInactive\nNot Present"
+    },
+    {
+      "fieldname": "result_section",
+      "fieldtype": "Section Break",
+      "label": "Result"
+    },
+    {
+      "fieldname": "passed",
+      "fieldtype": "Select",
+      "label": "Result",
+      "options": "Passed\nFailed\nConditional",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Facility Report",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1
+    }
+  ],
+  "track_changes": 1
+}

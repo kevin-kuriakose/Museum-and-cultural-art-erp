@@ -1,0 +1,2 @@
+include MANIFEST.in
+recursive-include museum_erp *.json *.js *.css *.html *.py

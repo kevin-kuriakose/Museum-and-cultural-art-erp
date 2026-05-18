@@ -1,0 +1,16 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Conservation Record",
+  "enabled": 1,
+  "event": "Days After",
+  "message": "<p>The next examination for artifact <strong>{{ doc.artifact }}</strong> was due on\n<strong>{{ doc.next_examination_date }}</strong>.</p>\n<p>Please schedule an examination as soon as possible. Priority: <strong>{{ doc.priority }}</strong>.</p>",
+  "name": "Conservation Examination Overdue",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Conservation Examination Overdue: {{ doc.artifact }}",
+  "days_in_advance": 0,
+  "date_changed": "next_examination_date"
+}

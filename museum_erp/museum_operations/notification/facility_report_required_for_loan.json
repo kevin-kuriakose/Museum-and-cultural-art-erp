@@ -1,0 +1,15 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Loan",
+  "enabled": 1,
+  "event": "Submit",
+  "message": "<p>The loan <strong>{{ doc.name }}</strong> to <strong>{{ doc.borrower_lender_institution }}</strong>\nrequires a Facility Report before artifacts can be dispatched.</p>\n<p>Please create a Facility Report for this loan.</p>",
+  "name": "Facility Report Required for Loan",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Facility Report Required: {{ doc.name }}",
+  "condition": "doc.facility_report_required == 1"
+}

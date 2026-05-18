@@ -1,0 +1,16 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Loan",
+  "enabled": 1,
+  "event": "Days After",
+  "message": "<p>The loan <strong>{{ doc.name }}</strong> to <strong>{{ doc.borrower_lender_institution }}</strong>\nhas passed its end date of <strong>{{ doc.loan_end_date }}</strong> and is now overdue.</p>\n<p>Please follow up immediately to arrange return of the artifacts.</p>",
+  "name": "Loan Overdue",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Loan Overdue: {{ doc.name }}",
+  "days_in_advance": 0,
+  "date_changed": "loan_end_date"
+}

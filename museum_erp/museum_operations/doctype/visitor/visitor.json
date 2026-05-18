@@ -1,0 +1,113 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "visitor_name",
+    "visitor_type",
+    "contact",
+    "nationality",
+    "col1",
+    "visit_date",
+    "visit_purpose",
+    "feedback_score",
+    "erpnext_section",
+    "crm_contact",
+    "notes"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "VIS-.YYYY.-.#####",
+      "default": "VIS-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "visitor_name",
+      "fieldtype": "Data",
+      "label": "Visitor Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "visitor_type",
+      "fieldtype": "Select",
+      "label": "Visitor Type",
+      "options": "Individual\nGroup\nSchool\nCorporate\nResearcher\nMember",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "contact",
+      "fieldtype": "Data",
+      "label": "Contact"
+    },
+    {
+      "fieldname": "nationality",
+      "fieldtype": "Link",
+      "label": "Nationality",
+      "options": "Country"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "visit_date",
+      "fieldtype": "Date",
+      "label": "Visit Date",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "visit_purpose",
+      "fieldtype": "Data",
+      "label": "Visit Purpose"
+    },
+    {
+      "fieldname": "feedback_score",
+      "fieldtype": "Select",
+      "label": "Feedback Score",
+      "options": "\n1\n2\n3\n4\n5"
+    },
+    {
+      "fieldname": "erpnext_section",
+      "fieldtype": "Section Break",
+      "label": "ERPNext"
+    },
+    {
+      "fieldname": "crm_contact",
+      "fieldtype": "Link",
+      "label": "ERPNext Contact",
+      "options": "Contact"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Visitor",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    }
+  ],
+  "title_field": "visitor_name",
+  "track_changes": 1
+}

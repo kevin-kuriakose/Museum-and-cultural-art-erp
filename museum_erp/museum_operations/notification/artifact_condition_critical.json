@@ -1,0 +1,15 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Artifact",
+  "enabled": 1,
+  "event": "Save",
+  "message": "<p>Artifact <strong>{{ doc.title }}</strong> ({{ doc.name }}) has been flagged with\n<strong>Critical</strong> condition.</p>\n<p>Please raise a Conservation Record immediately.</p>",
+  "name": "Artifact Condition Critical",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Critical Condition Alert: {{ doc.title }}",
+  "condition": "doc.condition == 'Critical'"
+}

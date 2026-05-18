@@ -1,0 +1,167 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "membership_number",
+    "member_name",
+    "membership_tier",
+    "join_date",
+    "expiry_date",
+    "col1",
+    "auto_renew",
+    "contact",
+    "total_donations",
+    "loyalty_points",
+    "status",
+    "benefits_section",
+    "benefits_list",
+    "payments_section",
+    "payment_history",
+    "erpnext_section",
+    "crm_contact",
+    "crm_lead"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "MEM-.YYYY.-.#####",
+      "default": "MEM-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "membership_number",
+      "fieldtype": "Data",
+      "label": "Membership Number",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "member_name",
+      "fieldtype": "Data",
+      "label": "Name",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "membership_tier",
+      "fieldtype": "Link",
+      "label": "Membership Tier",
+      "options": "Membership Tier",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "join_date",
+      "fieldtype": "Date",
+      "label": "Join Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "expiry_date",
+      "fieldtype": "Date",
+      "label": "Expiry Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "auto_renew",
+      "fieldtype": "Check",
+      "label": "Auto Renew"
+    },
+    {
+      "fieldname": "contact",
+      "fieldtype": "Data",
+      "label": "Contact"
+    },
+    {
+      "fieldname": "total_donations",
+      "fieldtype": "Currency",
+      "label": "Total Donations (Rs)"
+    },
+    {
+      "fieldname": "loyalty_points",
+      "fieldtype": "Int",
+      "label": "Loyalty Points"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nExpired\nLapsed\nComplimentary",
+      "default": "Active",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "benefits_section",
+      "fieldtype": "Section Break",
+      "label": "Benefits"
+    },
+    {
+      "fieldname": "benefits_list",
+      "fieldtype": "Table",
+      "label": "Benefits",
+      "options": "Member Benefit"
+    },
+    {
+      "fieldname": "payments_section",
+      "fieldtype": "Section Break",
+      "label": "Payment History"
+    },
+    {
+      "fieldname": "payment_history",
+      "fieldtype": "Table",
+      "label": "Payments",
+      "options": "Member Payment"
+    },
+    {
+      "fieldname": "erpnext_section",
+      "fieldtype": "Section Break",
+      "label": "ERPNext"
+    },
+    {
+      "fieldname": "crm_contact",
+      "fieldtype": "Link",
+      "label": "ERPNext Contact",
+      "options": "Contact"
+    },
+    {
+      "fieldname": "crm_lead",
+      "fieldtype": "Link",
+      "label": "ERPNext Lead",
+      "options": "Lead"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Member",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1
+    }
+  ],
+  "title_field": "member_name",
+  "track_changes": 1
+}

@@ -1,0 +1,207 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 1,
+  "field_order": [
+    "naming_series",
+    "title",
+    "exhibition_type",
+    "theme",
+    "start_date",
+    "end_date",
+    "status",
+    "col1",
+    "venue_galleries",
+    "target_audience",
+    "expected_visitors",
+    "actual_visitors",
+    "financial_section",
+    "budget",
+    "expenditure",
+    "curators_section",
+    "curators",
+    "sponsors_section",
+    "sponsoring_organizations",
+    "erpnext_section",
+    "project",
+    "cost_center",
+    "sales_invoice",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "EXHB-.YYYY.-.#####",
+      "default": "EXHB-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "title",
+      "fieldtype": "Data",
+      "label": "Title",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "exhibition_type",
+      "fieldtype": "Select",
+      "label": "Type",
+      "options": "Permanent\nTemporary\nTraveling\nVirtual",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "theme",
+      "fieldtype": "Data",
+      "label": "Theme"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Planning\nInstallation\nOpen\nClosed\nTraveling",
+      "default": "Planning",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "venue_galleries",
+      "fieldtype": "Data",
+      "label": "Venue / Galleries"
+    },
+    {
+      "fieldname": "target_audience",
+      "fieldtype": "Data",
+      "label": "Target Audience"
+    },
+    {
+      "fieldname": "expected_visitors",
+      "fieldtype": "Int",
+      "label": "Expected Visitors"
+    },
+    {
+      "fieldname": "actual_visitors",
+      "fieldtype": "Int",
+      "label": "Actual Visitors"
+    },
+    {
+      "fieldname": "financial_section",
+      "fieldtype": "Section Break",
+      "label": "Budget"
+    },
+    {
+      "fieldname": "budget",
+      "fieldtype": "Currency",
+      "label": "Budget (Rs)"
+    },
+    {
+      "fieldname": "expenditure",
+      "fieldtype": "Currency",
+      "label": "Expenditure (Rs)"
+    },
+    {
+      "fieldname": "curators_section",
+      "fieldtype": "Section Break",
+      "label": "Curators"
+    },
+    {
+      "fieldname": "curators",
+      "fieldtype": "Table",
+      "label": "Curators",
+      "options": "Exhibition Curator"
+    },
+    {
+      "fieldname": "sponsors_section",
+      "fieldtype": "Section Break",
+      "label": "Sponsors"
+    },
+    {
+      "fieldname": "sponsoring_organizations",
+      "fieldtype": "Table",
+      "label": "Sponsors",
+      "options": "Exhibition Sponsor"
+    },
+    {
+      "fieldname": "erpnext_section",
+      "fieldtype": "Section Break",
+      "label": "ERPNext Integration"
+    },
+    {
+      "fieldname": "project",
+      "fieldtype": "Link",
+      "label": "ERPNext Project",
+      "options": "Project"
+    },
+    {
+      "fieldname": "cost_center",
+      "fieldtype": "Link",
+      "label": "Cost Center",
+      "options": "Cost Center"
+    },
+    {
+      "fieldname": "sales_invoice",
+      "fieldtype": "Link",
+      "label": "Sales Invoice",
+      "options": "Sales Invoice"
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Exhibition",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Exhibition",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "submit": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1
+    }
+  ],
+  "title_field": "title",
+  "track_changes": 1
+}

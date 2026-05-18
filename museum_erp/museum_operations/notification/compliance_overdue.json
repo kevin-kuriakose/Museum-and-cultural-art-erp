@@ -1,0 +1,17 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Compliance Tracker",
+  "enabled": 1,
+  "event": "Days After",
+  "message": "<p><strong>URGENT:</strong> The compliance obligation <strong>{{ doc.obligation_type }}</strong>\nwas due on <strong>{{ doc.due_date }}</strong> and has not been completed.</p>\n<p>Responsible: <strong>{{ doc.responsible_person }}</strong>. Immediate action required.</p>",
+  "name": "Compliance Overdue",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Compliance OVERDUE: {{ doc.obligation_type }}",
+  "days_in_advance": 0,
+  "date_changed": "due_date",
+  "condition": "doc.status != 'Completed'"
+}

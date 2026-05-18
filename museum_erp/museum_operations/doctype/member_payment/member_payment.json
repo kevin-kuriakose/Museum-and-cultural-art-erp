@@ -1,0 +1,42 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "payment_date",
+    "amount",
+    "payment_mode",
+    "reference"
+  ],
+  "fields": [
+    {
+      "fieldname": "payment_date",
+      "fieldtype": "Date",
+      "label": "Date",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "label": "Amount (Rs)",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "payment_mode",
+      "fieldtype": "Data",
+      "label": "Mode",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "reference",
+      "fieldtype": "Data",
+      "label": "Reference"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Member Payment",
+  "owner": "Administrator",
+  "permissions": []
+}

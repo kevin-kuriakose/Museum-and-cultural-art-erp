@@ -1,0 +1,118 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "naming_series",
+    "policy_number",
+    "insurer",
+    "coverage_type",
+    "coverage_amount",
+    "premium",
+    "col1",
+    "start_date",
+    "end_date",
+    "status",
+    "artifacts_section",
+    "artifacts_covered"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "INS-.YYYY.-.#####",
+      "default": "INS-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "policy_number",
+      "fieldtype": "Data",
+      "label": "Policy Number",
+      "reqd": 1,
+      "in_list_view": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "insurer",
+      "fieldtype": "Data",
+      "label": "Insurer",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "coverage_type",
+      "fieldtype": "Select",
+      "label": "Coverage Type",
+      "options": "Building\nCollection\nLiability\nTransit\nEvent",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "coverage_amount",
+      "fieldtype": "Currency",
+      "label": "Coverage (Rs)"
+    },
+    {
+      "fieldname": "premium",
+      "fieldtype": "Currency",
+      "label": "Premium (Rs)"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Active\nExpired\nCancelled",
+      "default": "Active",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "artifacts_section",
+      "fieldtype": "Section Break",
+      "label": "Artifacts Covered"
+    },
+    {
+      "fieldname": "artifacts_covered",
+      "fieldtype": "Table",
+      "label": "Artifacts",
+      "options": "Insurance Artifact"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Insurance Policy",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1
+    }
+  ],
+  "track_changes": 1
+}

@@ -1,0 +1,31 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "skill",
+    "proficiency"
+  ],
+  "fields": [
+    {
+      "fieldname": "skill",
+      "fieldtype": "Data",
+      "label": "Skill",
+      "in_list_view": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "proficiency",
+      "fieldtype": "Select",
+      "label": "Proficiency",
+      "options": "Beginner\nIntermediate\nAdvanced\nExpert",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Volunteer Skill",
+  "owner": "Administrator",
+  "permissions": []
+}

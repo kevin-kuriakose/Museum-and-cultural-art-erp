@@ -1,0 +1,179 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 1,
+  "field_order": [
+    "naming_series",
+    "accession_number",
+    "acquisition_type",
+    "source_name",
+    "source_type",
+    "acquisition_date",
+    "col1",
+    "total_value",
+    "funding_source",
+    "curator_in_charge",
+    "status",
+    "items_section",
+    "items",
+    "erpnext_section",
+    "purchase_order",
+    "purchase_invoice",
+    "notes_section",
+    "legal_documents",
+    "notes",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "ACQ-.YYYY.-.#####",
+      "default": "ACQ-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "accession_number",
+      "fieldtype": "Data",
+      "label": "Accession Number",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "acquisition_type",
+      "fieldtype": "Select",
+      "label": "Acquisition Type",
+      "options": "Purchase\nGift\nBequest\nField Collection\nTransfer\nBequest in Will\nLong Term Deposit\nRepatriation\nCommission",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "source_name",
+      "fieldtype": "Data",
+      "label": "Source Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "source_type",
+      "fieldtype": "Select",
+      "label": "Source Type",
+      "options": "Individual\nInstitution\nDealer\nAuction"
+    },
+    {
+      "fieldname": "acquisition_date",
+      "fieldtype": "Date",
+      "label": "Acquisition Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "total_value",
+      "fieldtype": "Currency",
+      "label": "Total Value (Rs)",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "funding_source",
+      "fieldtype": "Data",
+      "label": "Funding Source"
+    },
+    {
+      "fieldname": "curator_in_charge",
+      "fieldtype": "Link",
+      "label": "Curator in Charge",
+      "options": "User"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Proposed\nApproved\nAccessioned\nDeaccessioned",
+      "default": "Proposed",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "items_section",
+      "fieldtype": "Section Break",
+      "label": "Items"
+    },
+    {
+      "fieldname": "items",
+      "fieldtype": "Table",
+      "label": "Items",
+      "options": "Acquisition Item"
+    },
+    {
+      "fieldname": "erpnext_section",
+      "fieldtype": "Section Break",
+      "label": "ERPNext Links"
+    },
+    {
+      "fieldname": "purchase_order",
+      "fieldtype": "Link",
+      "label": "Purchase Order",
+      "options": "Purchase Order"
+    },
+    {
+      "fieldname": "purchase_invoice",
+      "fieldtype": "Link",
+      "label": "Purchase Invoice",
+      "options": "Purchase Invoice"
+    },
+    {
+      "fieldname": "notes_section",
+      "fieldtype": "Section Break",
+      "label": "Documents"
+    },
+    {
+      "fieldname": "legal_documents",
+      "fieldtype": "Attach",
+      "label": "Legal Documents"
+    },
+    {
+      "fieldname": "notes",
+      "fieldtype": "Small Text",
+      "label": "Notes"
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Acquisition",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Acquisition",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "Accounts Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "submit": 1
+    }
+  ],
+  "title_field": "accession_number",
+  "track_changes": 1
+}

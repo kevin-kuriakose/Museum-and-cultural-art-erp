@@ -1,0 +1,45 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "budget_category",
+    "allocated_amount",
+    "spent_amount",
+    "balance"
+  ],
+  "fields": [
+    {
+      "fieldname": "budget_category",
+      "fieldtype": "Data",
+      "label": "Category",
+      "in_list_view": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "allocated_amount",
+      "fieldtype": "Currency",
+      "label": "Allocated (Rs)",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "spent_amount",
+      "fieldtype": "Currency",
+      "label": "Spent (Rs)",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "balance",
+      "fieldtype": "Currency",
+      "label": "Balance",
+      "in_list_view": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Grant Budget Line",
+  "owner": "Administrator",
+  "permissions": []
+}

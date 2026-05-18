@@ -1,0 +1,16 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Grant",
+  "enabled": 1,
+  "event": "Days Before",
+  "message": "<p>The grant <strong>{{ doc.grant_title }}</strong> from\n<strong>{{ doc.granting_body }}</strong> ends in 14 days on <strong>{{ doc.end_date }}</strong>.</p>\n<p>Please ensure the final Grant Utilization Report is prepared and submitted.</p>",
+  "name": "Grant Utilization Report Due",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Grant Utilization Report Due: {{ doc.grant_title }}",
+  "days_in_advance": 14,
+  "date_changed": "end_date"
+}

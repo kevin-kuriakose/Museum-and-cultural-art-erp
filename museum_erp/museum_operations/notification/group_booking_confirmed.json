@@ -1,0 +1,14 @@
+{
+  "attach_print": 0,
+  "channel": "System Notification",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "Notification",
+  "document_type": "Group Booking",
+  "enabled": 1,
+  "event": "Submit",
+  "message": "<p>The group booking for <strong>{{ doc.organization_name }}</strong>\n({{ doc.group_type }}) on <strong>{{ doc.visit_date }}</strong> has been confirmed.</p>\n<p>Group size: {{ doc.group_size }}. Visit slot: {{ doc.visit_slot }}.\n{% if doc.guide_required %}A guide has been requested.{% endif %}</p>",
+  "name": "Group Booking Confirmed",
+  "owner": "Administrator",
+  "send_system_notification": 1,
+  "subject": "Group Booking Confirmed: {{ doc.organization_name }}"
+}

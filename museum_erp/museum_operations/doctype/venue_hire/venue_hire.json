@@ -1,0 +1,185 @@
+{
+  "actions": [],
+  "autoname": "naming_series:",
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "is_submittable": 1,
+  "field_order": [
+    "naming_series",
+    "venue_name",
+    "hirer_name",
+    "hirer_type",
+    "event_name",
+    "event_date",
+    "start_time",
+    "end_time",
+    "col1",
+    "setup_time",
+    "teardown_time",
+    "capacity_required",
+    "catering_required",
+    "av_required",
+    "security_required",
+    "hire_fee",
+    "deposit_amount",
+    "deposit_paid",
+    "status",
+    "erpnext_section",
+    "sales_invoice",
+    "amended_from"
+  ],
+  "fields": [
+    {
+      "fieldname": "naming_series",
+      "fieldtype": "Series",
+      "label": "Series",
+      "options": "VH-.YYYY.-.#####",
+      "default": "VH-.YYYY.-.#####"
+    },
+    {
+      "fieldname": "venue_name",
+      "fieldtype": "Select",
+      "label": "Venue",
+      "options": "Main Hall\nAuditorium\nConference Room\nCourtyard\nRooftop Terrace\nGarden\nLibrary\nEducation Studio\nBoardroom",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "hirer_name",
+      "fieldtype": "Data",
+      "label": "Hirer",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "hirer_type",
+      "fieldtype": "Select",
+      "label": "Hirer Type",
+      "options": "Corporate\nWedding\nPrivate\nFilm Shoot\nAcademic"
+    },
+    {
+      "fieldname": "event_name",
+      "fieldtype": "Data",
+      "label": "Event Name"
+    },
+    {
+      "fieldname": "event_date",
+      "fieldtype": "Date",
+      "label": "Event Date",
+      "reqd": 1,
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "start_time",
+      "fieldtype": "Time",
+      "label": "Start Time"
+    },
+    {
+      "fieldname": "end_time",
+      "fieldtype": "Time",
+      "label": "End Time"
+    },
+    {
+      "fieldname": "col1",
+      "fieldtype": "Column Break"
+    },
+    {
+      "fieldname": "setup_time",
+      "fieldtype": "Time",
+      "label": "Setup Time"
+    },
+    {
+      "fieldname": "teardown_time",
+      "fieldtype": "Time",
+      "label": "Teardown Time"
+    },
+    {
+      "fieldname": "capacity_required",
+      "fieldtype": "Int",
+      "label": "Capacity Required"
+    },
+    {
+      "fieldname": "catering_required",
+      "fieldtype": "Check",
+      "label": "Catering Required"
+    },
+    {
+      "fieldname": "av_required",
+      "fieldtype": "Check",
+      "label": "AV Required"
+    },
+    {
+      "fieldname": "security_required",
+      "fieldtype": "Check",
+      "label": "Security Required"
+    },
+    {
+      "fieldname": "hire_fee",
+      "fieldtype": "Currency",
+      "label": "Hire Fee (Rs)"
+    },
+    {
+      "fieldname": "deposit_amount",
+      "fieldtype": "Currency",
+      "label": "Deposit (Rs)"
+    },
+    {
+      "fieldname": "deposit_paid",
+      "fieldtype": "Check",
+      "label": "Deposit Paid"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Enquiry\nConfirmed\nCompleted\nCancelled",
+      "default": "Enquiry",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "erpnext_section",
+      "fieldtype": "Section Break",
+      "label": "ERPNext"
+    },
+    {
+      "fieldname": "sales_invoice",
+      "fieldtype": "Link",
+      "label": "Sales Invoice",
+      "options": "Sales Invoice"
+    },
+    {
+      "fieldname": "amended_from",
+      "fieldtype": "Link",
+      "label": "Amended From",
+      "options": "Venue Hire",
+      "no_copy": 1,
+      "print_hide": 1,
+      "read_only": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Venue Hire",
+  "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "role": "System Manager",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1,
+      "submit": 1,
+      "cancel": 1,
+      "amend": 1
+    },
+    {
+      "role": "Accounts User",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "submit": 1
+    }
+  ],
+  "track_changes": 1
+}

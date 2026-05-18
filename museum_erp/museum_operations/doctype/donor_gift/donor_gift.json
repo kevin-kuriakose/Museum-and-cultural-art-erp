@@ -1,0 +1,36 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "year",
+    "amount",
+    "purpose"
+  ],
+  "fields": [
+    {
+      "fieldname": "year",
+      "fieldtype": "Data",
+      "label": "Year",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "amount",
+      "fieldtype": "Currency",
+      "label": "Amount (Rs)",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "purpose",
+      "fieldtype": "Data",
+      "label": "Purpose",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Donor Gift",
+  "owner": "Administrator",
+  "permissions": []
+}

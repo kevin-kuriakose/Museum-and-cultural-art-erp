@@ -1,0 +1,52 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "artifact",
+    "condition_at_departure",
+    "condition_at_return",
+    "damage_noted",
+    "condition_report_attached"
+  ],
+  "fields": [
+    {
+      "fieldname": "artifact",
+      "fieldtype": "Link",
+      "label": "Artifact",
+      "options": "Artifact",
+      "in_list_view": 1,
+      "reqd": 1
+    },
+    {
+      "fieldname": "condition_at_departure",
+      "fieldtype": "Select",
+      "label": "Condition at Departure",
+      "options": "\nExcellent\nGood\nFair\nPoor\nCritical",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "condition_at_return",
+      "fieldtype": "Select",
+      "label": "Condition at Return",
+      "options": "\nExcellent\nGood\nFair\nPoor\nCritical",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "damage_noted",
+      "fieldtype": "Check",
+      "label": "Damage Noted"
+    },
+    {
+      "fieldname": "condition_report_attached",
+      "fieldtype": "Check",
+      "label": "Condition Report Attached"
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Loan Artifact",
+  "owner": "Administrator",
+  "permissions": []
+}

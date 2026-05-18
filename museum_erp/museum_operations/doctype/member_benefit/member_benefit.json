@@ -1,0 +1,36 @@
+{
+  "actions": [],
+  "creation": "2024-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "istable": 1,
+  "field_order": [
+    "benefit",
+    "used",
+    "max"
+  ],
+  "fields": [
+    {
+      "fieldname": "benefit",
+      "fieldtype": "Data",
+      "label": "Benefit",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "used",
+      "fieldtype": "Int",
+      "label": "Used",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "max",
+      "fieldtype": "Int",
+      "label": "Max",
+      "in_list_view": 1
+    }
+  ],
+  "module": "Museum Operations",
+  "name": "Member Benefit",
+  "owner": "Administrator",
+  "permissions": []
+}

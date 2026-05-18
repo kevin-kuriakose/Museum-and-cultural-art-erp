@@ -171,14 +171,16 @@
       "delete": 1,
       "submit": 1,
       "cancel": 1,
-      "amend": 1
+      "amend": 1,
+      "report": 1
     },
     {
       "role": "Accounts User",
       "read": 1,
       "write": 1,
       "create": 1,
-      "submit": 1
+      "submit": 1,
+      "report": 1
     }
   ],
   "track_changes": 1

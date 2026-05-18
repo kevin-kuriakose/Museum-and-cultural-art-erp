@@ -133,13 +133,15 @@
       "read": 1,
       "write": 1,
       "create": 1,
-      "delete": 1
+      "delete": 1,
+      "report": 1
     },
     {
       "role": "Accounts Manager",
       "read": 1,
       "write": 1,
-      "create": 1
+      "create": 1,
+      "report": 1
     }
   ],
   "title_field": "grant_title",

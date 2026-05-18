@@ -1,6 +1,6 @@
 {
+  "category": "Modules",
   "charts": [],
-  "content": "[{\"id\": \"cb-collection\", \"type\": \"card\", \"data\": {\"card_name\": \"Collection Management\", \"col\": 12}}, {\"id\": \"hd-reports\", \"type\": \"header\", \"data\": {\"text\": \"Reports\", \"col\": 12}}, {\"id\": \"sc-r-0\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Visitor Attendance Report\", \"col\": 3}}, {\"id\": \"sc-r-1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Revenue Summary\", \"col\": 3}}, {\"id\": \"sc-r-2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Collection Statistics\", \"col\": 3}}, {\"id\": \"sc-r-3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Exhibition Performance Report\", \"col\": 3}}, {\"id\": \"sc-r-4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Loan Status Report\", \"col\": 3}}, {\"id\": \"sc-r-5\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Conservation Priority Report\", \"col\": 3}}, {\"id\": \"sc-r-6\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Membership Report\", \"col\": 3}}, {\"id\": \"sc-r-7\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Donor Report\", \"col\": 3}}, {\"id\": \"sc-r-8\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Grant Utilization Summary\", \"col\": 3}}, {\"id\": \"sc-r-9\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Volunteer Hours Summary\", \"col\": 3}}, {\"id\": \"sc-r-10\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Shop Inventory Report\", \"col\": 3}}, {\"id\": \"sc-r-11\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Compliance Calendar\", \"col\": 3}}, {\"id\": \"sc-r-12\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Facility Utilization Report\", \"col\": 3}}, {\"id\": \"sc-r-13\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Research Access Log\", \"col\": 3}}, {\"id\": \"sc-r-14\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"School Visit Impact Report\", \"col\": 3}}]",
   "doctype": "Workspace",
   "for_user": "",
   "icon": "uil uil-building",
@@ -11,406 +11,535 @@
   "owner": "Administrator",
   "public": 1,
   "roles": [],
-  "sequence_id": 1.0,
-  "shortcuts": [
-    {
-      "label": "Artifact",
-      "link_to": "Artifact",
-      "type": "DocType",
-      "color": "Blue",
-      "format": "{} Artifacts"
-    },
-    {
-      "label": "Acquisition",
-      "link_to": "Acquisition",
-      "type": "DocType",
-      "color": "Green"
-    },
-    {
-      "label": "Artifact Location",
-      "link_to": "Artifact Location",
-      "type": "DocType",
-      "color": "Orange"
-    },
-    {
-      "label": "Artifact Provenance",
-      "link_to": "Artifact Provenance",
-      "type": "DocType",
-      "color": "Purple"
-    },
-    {
-      "label": "Deaccession",
-      "link_to": "Deaccession",
-      "type": "DocType",
-      "color": "Red"
-    },
-    {
-      "label": "Visitor Attendance Report",
-      "link_to": "Visitor Attendance Report",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-0"
-    },
-    {
-      "label": "Revenue Summary",
-      "link_to": "Revenue Summary",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-1"
-    },
-    {
-      "label": "Collection Statistics",
-      "link_to": "Collection Statistics",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-2"
-    },
-    {
-      "label": "Exhibition Performance Report",
-      "link_to": "Exhibition Performance Report",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-3"
-    },
-    {
-      "label": "Loan Status Report",
-      "link_to": "Loan Status Report",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-4"
-    },
-    {
-      "label": "Conservation Priority Report",
-      "link_to": "Conservation Priority Report",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-5"
-    },
-    {
-      "label": "Membership Report",
-      "link_to": "Membership Report",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-6"
-    },
-    {
-      "label": "Donor Report",
-      "link_to": "Donor Report",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-7"
-    },
-    {
-      "label": "Grant Utilization Summary",
-      "link_to": "Grant Utilization Summary",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-8"
-    },
-    {
-      "label": "Volunteer Hours Summary",
-      "link_to": "Volunteer Hours Summary",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-9"
-    },
-    {
-      "label": "Shop Inventory Report",
-      "link_to": "Shop Inventory Report",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-10"
-    },
-    {
-      "label": "Compliance Calendar",
-      "link_to": "Compliance Calendar",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-11"
-    },
-    {
-      "label": "Facility Utilization Report",
-      "link_to": "Facility Utilization Report",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-12"
-    },
-    {
-      "label": "Research Access Log",
-      "link_to": "Research Access Log",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-13"
-    },
-    {
-      "label": "School Visit Impact Report",
-      "link_to": "School Visit Impact Report",
-      "type": "Report",
-      "color": "Blue",
-      "name": "sc-report-14"
-    }
-  ],
+  "sequence_id": 1,
+  "shortcuts": [],
+  "title": "MuseumEdge",
   "links": [
     {
-      "hidden": 0,
-      "idx": 1,
-      "is_query_report": 0,
       "label": "Collection Management",
-      "link_count": 0,
-      "onboard": 1,
-      "title": "Collection Management",
-      "type": "Card Break"
+      "type": "Card Break",
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 2,
-      "is_query_report": 0,
       "label": "Artifact",
-      "link_count": 0,
       "link_to": "Artifact",
       "link_type": "DocType",
-      "onboard": 1,
-      "type": "Link"
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 3,
-      "is_query_report": 0,
       "label": "Acquisition",
-      "link_count": 0,
       "link_to": "Acquisition",
       "link_type": "DocType",
-      "onboard": 1,
-      "type": "Link"
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 4,
-      "is_query_report": 0,
       "label": "Artifact Location",
-      "link_count": 0,
       "link_to": "Artifact Location",
       "link_type": "DocType",
-      "onboard": 1,
-      "type": "Link"
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 5,
-      "is_query_report": 0,
       "label": "Artifact Provenance",
-      "link_count": 0,
       "link_to": "Artifact Provenance",
       "link_type": "DocType",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 6,
-      "is_query_report": 0,
       "label": "Deaccession",
-      "link_count": 0,
       "link_to": "Deaccession",
       "link_type": "DocType",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "hidden": 0
     },
     {
+      "label": "Conservation",
+      "type": "Card Break",
+      "hidden": 0
+    },
+    {
+      "label": "Conservation Record",
+      "link_to": "Conservation Record",
+      "link_type": "DocType",
+      "type": "Link",
       "hidden": 0,
-      "idx": 99,
-      "is_query_report": 0,
+      "onboard": 1
+    },
+    {
+      "label": "Conservation Treatment",
+      "link_to": "Conservation Treatment",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Condition Report",
+      "link_to": "Condition Report",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Exhibitions & Loans",
+      "type": "Card Break",
+      "hidden": 0
+    },
+    {
+      "label": "Exhibition",
+      "link_to": "Exhibition",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
+    },
+    {
+      "label": "Exhibition Artifact",
+      "link_to": "Exhibition Artifact",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Exhibition Tour",
+      "link_to": "Exhibition Tour",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Loan",
+      "link_to": "Loan",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
+    },
+    {
+      "label": "Facility Report",
+      "link_to": "Facility Report",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Visitors & Ticketing",
+      "type": "Card Break",
+      "hidden": 0
+    },
+    {
+      "label": "Ticket",
+      "link_to": "Ticket",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
+    },
+    {
+      "label": "Ticket Type",
+      "link_to": "Ticket Type",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Group Booking",
+      "link_to": "Group Booking",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Visitor",
+      "link_to": "Visitor",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Visitor Feedback",
+      "link_to": "Visitor Feedback",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Membership & Donors",
+      "type": "Card Break",
+      "hidden": 0
+    },
+    {
+      "label": "Member",
+      "link_to": "Member",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
+    },
+    {
+      "label": "Membership Tier",
+      "link_to": "Membership Tier",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Membership Renewal",
+      "link_to": "Membership Renewal",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Donor",
+      "link_to": "Donor",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
+    },
+    {
+      "label": "Donation",
+      "link_to": "Donation",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
+    },
+    {
+      "label": "Donation Campaign",
+      "link_to": "Donation Campaign",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Education & Programs",
+      "type": "Card Break",
+      "hidden": 0
+    },
+    {
+      "label": "Education Program",
+      "link_to": "Education Program",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
+    },
+    {
+      "label": "Program Session",
+      "link_to": "Program Session",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "School Visit",
+      "link_to": "School Visit",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Workshop Booking",
+      "link_to": "Workshop Booking",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Research Request",
+      "link_to": "Research Request",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Facility & Venue",
+      "type": "Card Break",
+      "hidden": 0
+    },
+    {
+      "label": "Gallery",
+      "link_to": "Gallery",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
+    },
+    {
+      "label": "Storage Room",
+      "link_to": "Storage Room",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Venue Hire",
+      "link_to": "Venue Hire",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Maintenance Request",
+      "link_to": "Maintenance Request",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Volunteers & Staff",
+      "type": "Card Break",
+      "hidden": 0
+    },
+    {
+      "label": "Volunteer",
+      "link_to": "Volunteer",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
+    },
+    {
+      "label": "Volunteer Assignment",
+      "link_to": "Volunteer Assignment",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Volunteer Timesheet",
+      "link_to": "Volunteer Timesheet",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Staff Training",
+      "link_to": "Staff Training",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Retail & Gift Shop",
+      "type": "Card Break",
+      "hidden": 0
+    },
+    {
+      "label": "Shop Item",
+      "link_to": "Shop Item",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
+    },
+    {
+      "label": "Shop Sale",
+      "link_to": "Shop Sale",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Shop Purchase Order",
+      "link_to": "Shop Purchase Order",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Grants & Fundraising",
+      "type": "Card Break",
+      "hidden": 0
+    },
+    {
+      "label": "Grant",
+      "link_to": "Grant",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
+    },
+    {
+      "label": "Grant Utilization Report",
+      "link_to": "Grant Utilization Report",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Fundraising Event",
+      "link_to": "Fundraising Event",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Governance & Compliance",
+      "type": "Card Break",
+      "hidden": 0
+    },
+    {
+      "label": "Board Meeting",
+      "link_to": "Board Meeting",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0,
+      "onboard": 1
+    },
+    {
+      "label": "Policy Document",
+      "link_to": "Policy Document",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Compliance Tracker",
+      "link_to": "Compliance Tracker",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
+      "label": "Insurance Policy",
+      "link_to": "Insurance Policy",
+      "link_type": "DocType",
+      "type": "Link",
+      "hidden": 0
+    },
+    {
       "label": "Reports",
-      "link_count": 0,
-      "onboard": 0,
-      "title": "Reports",
-      "type": "Card Break"
+      "type": "Card Break",
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 100,
-      "is_query_report": 1,
       "label": "Visitor Attendance Report",
-      "link_count": 0,
       "link_to": "Visitor Attendance Report",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 101,
-      "is_query_report": 1,
       "label": "Revenue Summary",
-      "link_count": 0,
       "link_to": "Revenue Summary",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 102,
-      "is_query_report": 1,
       "label": "Collection Statistics",
-      "link_count": 0,
       "link_to": "Collection Statistics",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 103,
-      "is_query_report": 1,
       "label": "Exhibition Performance Report",
-      "link_count": 0,
       "link_to": "Exhibition Performance Report",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 104,
-      "is_query_report": 1,
       "label": "Loan Status Report",
-      "link_count": 0,
       "link_to": "Loan Status Report",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 105,
-      "is_query_report": 1,
       "label": "Conservation Priority Report",
-      "link_count": 0,
       "link_to": "Conservation Priority Report",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 106,
-      "is_query_report": 1,
       "label": "Membership Report",
-      "link_count": 0,
       "link_to": "Membership Report",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 107,
-      "is_query_report": 1,
       "label": "Donor Report",
-      "link_count": 0,
       "link_to": "Donor Report",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 108,
-      "is_query_report": 1,
       "label": "Grant Utilization Summary",
-      "link_count": 0,
       "link_to": "Grant Utilization Summary",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 109,
-      "is_query_report": 1,
       "label": "Volunteer Hours Summary",
-      "link_count": 0,
       "link_to": "Volunteer Hours Summary",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 110,
-      "is_query_report": 1,
       "label": "Shop Inventory Report",
-      "link_count": 0,
       "link_to": "Shop Inventory Report",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 111,
-      "is_query_report": 1,
       "label": "Compliance Calendar",
-      "link_count": 0,
       "link_to": "Compliance Calendar",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 112,
-      "is_query_report": 1,
       "label": "Facility Utilization Report",
-      "link_count": 0,
       "link_to": "Facility Utilization Report",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 113,
-      "is_query_report": 1,
       "label": "Research Access Log",
-      "link_count": 0,
       "link_to": "Research Access Log",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     },
     {
-      "dependencies": "",
-      "hidden": 0,
-      "idx": 114,
-      "is_query_report": 1,
       "label": "School Visit Impact Report",
-      "link_count": 0,
       "link_to": "School Visit Impact Report",
       "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
+      "type": "Link",
+      "is_query_report": 1,
+      "hidden": 0
     }
   ],
-  "title": "MuseumEdge"
+  "content": "[{\"id\": \"hd-1\", \"type\": \"card\", \"data\": {\"card_name\": \"Collection Management\", \"col\": 4}}, {\"id\": \"hd-2\", \"type\": \"card\", \"data\": {\"card_name\": \"Conservation\", \"col\": 4}}, {\"id\": \"hd-3\", \"type\": \"card\", \"data\": {\"card_name\": \"Exhibitions & Loans\", \"col\": 4}}, {\"id\": \"hd-4\", \"type\": \"card\", \"data\": {\"card_name\": \"Visitors & Ticketing\", \"col\": 4}}, {\"id\": \"hd-5\", \"type\": \"card\", \"data\": {\"card_name\": \"Membership & Donors\", \"col\": 4}}, {\"id\": \"hd-6\", \"type\": \"card\", \"data\": {\"card_name\": \"Education & Programs\", \"col\": 4}}, {\"id\": \"hd-7\", \"type\": \"card\", \"data\": {\"card_name\": \"Facility & Venue\", \"col\": 4}}, {\"id\": \"hd-8\", \"type\": \"card\", \"data\": {\"card_name\": \"Volunteers & Staff\", \"col\": 4}}, {\"id\": \"hd-9\", \"type\": \"card\", \"data\": {\"card_name\": \"Retail & Gift Shop\", \"col\": 4}}, {\"id\": \"hd-10\", \"type\": \"card\", \"data\": {\"card_name\": \"Grants & Fundraising\", \"col\": 4}}, {\"id\": \"hd-11\", \"type\": \"card\", \"data\": {\"card_name\": \"Governance & Compliance\", \"col\": 4}}, {\"id\": \"hd-12\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 4}}]"
 }

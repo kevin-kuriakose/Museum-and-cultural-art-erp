@@ -15,15 +15,15 @@ def execute(filters=None):
     ]
     year = filters.get("year") or frappe.utils.nowdate()[:4]
     ticketing = {r.month: flt(r.amount) for r in frappe.db.sql(
-        "SELECT DATE_FORMAT(visit_date,'%%Y-%%m') as month, SUM(total_price) as amount FROM `tabTicket` WHERE docstatus=1 AND YEAR(visit_date)=%s GROUP BY month", year, as_dict=True)}
+        "SELECT DATE_FORMAT(visit_date,'%%Y-%%m') as month, SUM(total_price) as amount FROM `tabTicket` WHERE docstatus<2 AND YEAR(visit_date)=%s GROUP BY month", year, as_dict=True)}
     donations = {r.month: flt(r.amount) for r in frappe.db.sql(
-        "SELECT DATE_FORMAT(donation_date,'%%Y-%%m') as month, SUM(amount) as amount FROM `tabDonation` WHERE docstatus=1 AND YEAR(donation_date)=%s GROUP BY month", year, as_dict=True)}
+        "SELECT DATE_FORMAT(donation_date,'%%Y-%%m') as month, SUM(amount) as amount FROM `tabDonation` WHERE docstatus<2 AND YEAR(donation_date)=%s GROUP BY month", year, as_dict=True)}
     memberships = {r.month: flt(r.amount) for r in frappe.db.sql(
-        "SELECT DATE_FORMAT(renewal_date,'%%Y-%%m') as month, SUM(amount_paid) as amount FROM `tabMembership Renewal` WHERE docstatus=1 AND YEAR(renewal_date)=%s GROUP BY month", year, as_dict=True)}
+        "SELECT DATE_FORMAT(renewal_date,'%%Y-%%m') as month, SUM(amount_paid) as amount FROM `tabMembership Renewal` WHERE docstatus<2 AND YEAR(renewal_date)=%s GROUP BY month", year, as_dict=True)}
     venue = {r.month: flt(r.amount) for r in frappe.db.sql(
-        "SELECT DATE_FORMAT(event_date,'%%Y-%%m') as month, SUM(hire_fee) as amount FROM `tabVenue Hire` WHERE docstatus=1 AND YEAR(event_date)=%s GROUP BY month", year, as_dict=True)}
+        "SELECT DATE_FORMAT(event_date,'%%Y-%%m') as month, SUM(hire_fee) as amount FROM `tabVenue Hire` WHERE docstatus<2 AND YEAR(event_date)=%s GROUP BY month", year, as_dict=True)}
     shop = {r.month: flt(r.amount) for r in frappe.db.sql(
-        "SELECT DATE_FORMAT(sale_date,'%%Y-%%m') as month, SUM(total) as amount FROM `tabShop Sale` WHERE docstatus=1 AND YEAR(sale_date)=%s GROUP BY month", year, as_dict=True)}
+        "SELECT DATE_FORMAT(sale_date,'%%Y-%%m') as month, SUM(total) as amount FROM `tabShop Sale` WHERE docstatus<2 AND YEAR(sale_date)=%s GROUP BY month", year, as_dict=True)}
     months = sorted(set(list(ticketing)+list(donations)+list(memberships)+list(venue)+list(shop)))
     data = []
     for m in months:

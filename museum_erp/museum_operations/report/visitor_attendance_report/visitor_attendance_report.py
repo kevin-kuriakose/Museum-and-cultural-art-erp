@@ -22,7 +22,7 @@ def execute(filters=None):
             SUM(t.quantity) as total_visitors,
             SUM(t.total_price) as revenue
         FROM `tabTicket` t
-        WHERE t.docstatus = 1
+        WHERE t.docstatus < 2
         {date_filter}
         GROUP BY t.visit_date, t.exhibition, t.ticket_type
         ORDER BY t.visit_date DESC

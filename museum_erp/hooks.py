@@ -96,3 +96,11 @@ override_doctype_class.update({
     "Insurance Policy": "museum_erp.museum_operations.doctype.insurance_policy.insurance_policy.InsurancePolicy",
     "Insurance Artifact": "museum_erp.museum_operations.doctype.insurance_artifact.insurance_artifact.InsuranceArtifact",
 })
+
+fixtures = [
+    {"doctype": "Workspace", "filters": [["name", "in", ["MuseumEdge"]]]},
+    {"doctype": "Notification", "filters": [["document_type", "in", [
+        "Artifact", "Conservation Record", "Exhibition", "Member", "Loan",
+        "Insurance Policy", "Venue Hire", "Shop Item", "Group Booking", "Donation"
+    ]]]},
+]
